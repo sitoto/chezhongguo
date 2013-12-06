@@ -1,0 +1,9 @@
+<div class="nav">
+  <div class="<%= @questions_nav_selected_item %>">
+    <%= link_to '汽车问答', questions_path, :class => 'index' %>
+    <%= link_to '分类浏览', tags_questions_path, :class => 'tags' %>
+    <%= link_to '专家', experts_questions_path, :class => 'experts' %>
+    <%= link_to '未解决问题', unanswered_questions_path, :class => 'unanswered' %>
+    <%= link_to '我的问答', my_questions_path, :class => 'my' %>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="tools_bar">
+  <span class="right">
+    <%= link_to '新增', new_admin_car_model_path, class: "btn" %>
+  </span>
+  <%= paginate @admin_car_models %>
+</div>
+<table class="list">
+  <tr>
+    <th>Name</th>
+    <th>Name pinyin</th>
+    <th>Price low</th>
+    <th>Price top</th>
+    <th>Status</th>
+    <th>Country</th>
+    <th>Summary</th>
+    <th>Type</th>
+    <th>Use</th>
+    <th></th>
+  </tr>
+
+<% @admin_car_models.each do |admin_car_model| %>
+  <tr>
+    <td><%= admin_car_model.name %></td>
+    <td><%= admin_car_model.name_pinyin %></td>
+    <td><%= admin_car_model.price_low %></td>
+    <td><%= admin_car_model.price_top %></td>
+    <td><%= admin_car_model.status %></td>
+    <td><%= admin_car_model.country %></td>
+    <td><%= admin_car_model.summary %></td>
+    <td><%= admin_car_model.car_type %></td>
+    <td><%= admin_car_model.car_use %></td>
+      <td class="operation">
+        <%= link_to '详细', [:admin, admin_car_model] %>
+        <%= link_to '编辑', edit_admin_car_model_path(admin_car_model) %>
+        <%= link_to '删除', [:admin, admin_car_model], method: :delete, data: { confirm: 'Are you sure?' } %>
+      </td>
+  </tr>
+<% end %>
+</table>
+
+<% @nav_selected_item = 'car_model' %>
+
+<% content_for :search_bar do %>
+  <form action="/admin/car_models"  method="get">
+    <input type="text" name="q" class="search-query span3" value="<%= params[:q] %>" placeholder="搜索" />
+    <input type="submit" value="搜索" />
+  </form>
+<% end %>
+
+<% content_for :site_nav do %>
+  <%= link_to '后台', admin_root_path, :class => 'first' %>
+  <span class="sep">&gt;</span>
+  <%= link_to '车型', admin_car_models_path %>
+  <span class="sep">&gt;</span>
+  <label>列表</label>
+<% end %>

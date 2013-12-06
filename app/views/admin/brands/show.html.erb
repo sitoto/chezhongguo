@@ -1,0 +1,67 @@
+<h1>品牌详细信息</h1>
+
+<p id="notice"><%= notice %></p>
+
+<p><%= image_tag @brand.logo_image_url.to_s %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @brand.name %>
+</p>
+
+<p>
+  <b>Name pinyin:</b>
+  <%= @brand.name_pinyin %>
+</p>
+
+<p>
+  <b>Brand summary:</b>
+  <%= @brand.brand_summary %>
+</p>
+
+<p>
+  <b>Logo summary:</b>
+  <%= @brand.logo_summary %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @brand.country %>
+</p>
+
+<h3>厂商</h3>
+
+  <% unless  @makers.blank? %>
+    <% @makers.each do |maker| %>
+      <p><%= maker.name %></p>
+      <p><%= maker.summary %></p>
+      <p><%= maker.site %></p>
+    <% end %>
+  <% end %>
+
+  <%= form_for(Maker.new ,:url => admin_brand_makers_path(@brand)) do |f| %>
+    <p>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </p>
+    <p>
+      <%= f.label :summary %>
+      <%= f.text_field :summary %>
+    </p>
+    <p>
+      <%= f.label :site %>
+      <%= f.text_field :site %>
+    </p>
+
+    <p><%= f.submit %></p>
+  <% end %>
+
+<% @nav_selected_item = 'brand' %>
+
+<% content_for :site_nav do %>
+  <%= link_to '后台', admin_root_path, :class => 'first' %>
+  <span class="sep">&gt;</span>
+  <%= link_to '品牌', admin_brands_path %>
+  <span class="sep">&gt;</span>
+  <label><%= @brand.name %></label>
+<% end %>

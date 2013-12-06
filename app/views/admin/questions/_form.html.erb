@@ -1,0 +1,58 @@
+<%= form_for([:admin, @admin_question]) do |f| %>
+  <% if @admin_question.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@admin_question.errors.count, "error") %> prohibited this admin_question from being saved:</h2>
+
+      <ul>
+      <% @admin_question.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :content %><br />
+    <%= f.text_field :content %>
+  </div>
+  <div class="field">
+    <%= f.label :good %><br />
+    <%= f.number_field :good %>
+  </div>
+  <div class="field">
+    <%= f.label :bad %><br />
+    <%= f.number_field :bad %>
+  </div>
+  <div class="field">
+    <%= f.label :answers_count %><br />
+    <%= f.number_field :answers_count %>
+  </div>
+  <div class="field">
+    <%= f.label :views_count %><br />
+    <%= f.number_field :views_count %>
+  </div>
+  <div class="field">
+    <%= f.label :replied_at %><br />
+    <%= f.label :replied_at %>
+  </div>
+  <div class="field">
+    <%= f.label :suggested_at %><br />
+    <%= f.label :suggested_at %>
+  </div>
+  <div class="field">
+    <%= f.label :node_name %><br />
+    <%= render_question_node_select_tag(@admin_question) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :who_deleted %><br />
+    <%= f.text_field :who_deleted %>
+  </div>
+  <div class="actions">
+    <%= f.submit :class => "btn btn-primary", 'data-disable-with' => t("common.saving")%>
+  </div>
+<% end %>

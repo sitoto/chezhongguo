@@ -1,0 +1,73 @@
+<% content_for :left do %>
+  <%= image_tag @brand.logo_image_url.to_s %>
+  <p><%= @brand.brand_summary %></p>
+  <p><%= @brand.logo_summary %></p>
+
+  <h3>厂商</h3>
+
+  <% unless  @brand.makers.blank? %>
+    <% @brand.makers.each do |maker| %>
+      <p><%= maker.name %></p>
+      <p><%= maker.summary %></p>
+      <p><%= link_to "官方网站", maker.site, :target => "_blank" %></p>
+      <p>车型：<% maker.car_models.each do |model| %>
+         <%= link_to model.name,"#" %>
+       <% end %></p>
+    <% end %>
+  <% end %>
+
+
+<% end %>
+
+<% content_for :right do %>
+  <div>热门品牌列表</div>
+<% end %>
+
+<% content_for :site_nav do %>
+  首页
+  &gt;
+  汽车品牌
+  &gt;
+  <%= @brand.name %>
+<% end %>
+
+
+
+
+
+
+
+<p id="notice"><%= notice %></p>
+
+<p><%= image_tag @brand.logo_image_url.to_s %></p>
+
+<p>
+<b>Name:</b>
+<%= @brand.name %>
+</p>
+
+<p>
+<b>Name pinyin:</b>
+<%= @brand.name_pinyin %>
+</p>
+
+<p>
+<b>Brand summary:</b>
+<%= @brand.brand_summary %>
+</p>
+
+<p>
+<b>Logo summary:</b>
+<%= @brand.logo_summary %>
+</p>
+
+<p>
+<b>Country:</b>
+<%= @brand.country %>
+</p>
+
+<h3>厂商</h3>
+
+
+
+<%= link_to '汽车品牌', brands_path %>

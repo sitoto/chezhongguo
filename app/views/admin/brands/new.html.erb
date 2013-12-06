@@ -1,0 +1,13 @@
+<h1>新增品牌</h1>
+
+<%= render 'form' %>
+
+<% @nav_selected_item = 'brand' %>
+
+<% content_for :site_nav do %>
+  <%= link_to '后台', admin_root_path, :class => 'first' %>
+  <span class="sep">&gt;</span>
+  <%= link_to '品牌', admin_brands_path %>
+  <span class="sep">&gt;</span>
+  <label>新增</label>
+<% end %>

@@ -1,0 +1,61 @@
+<div class="tools_bar">
+  <span class="right">
+    <%= link_to '新增', new_admin_question_path, class: "btn btn-primary" %>
+  </span>
+  <%= paginate @admin_questions %>
+</div>
+
+
+<table class="table table-bordered">
+  <tr>
+    <th>标题</th>
+    <th>UserID</th>
+    <th>Good</th>
+    <th>Bad</th>
+    <th>Answers count</th>
+    <th>Views count</th>
+    <th>Replied at</th>
+    <th>Suggested at</th>
+    <th>Node name</th>
+    <th>Who deleted</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @admin_questions.each do |admin_question| %>
+  <tr title=<%= admin_question.content %> >
+    <td><%= admin_question.title %></td>
+    <td><%= admin_question.user_id %></td>
+    <td><%= admin_question.good %></td>
+    <td><%= admin_question.bad %></td>
+    <td><%= admin_question.answers_count %></td>
+    <td><%= admin_question.views_count %></td>
+    <td><%= admin_question.replied_at %></td>
+    <td><%= admin_question.suggested_at %></td>
+    <td><%= admin_question.node_name %></td>
+    <td><%= admin_question.who_deleted %></td>
+    <td><%= link_to 'Show', [:admin, admin_question] %></td>
+    <td><%= link_to 'Edit', edit_admin_question_path(admin_question) %></td>
+    <td><%= link_to 'Destroy', [:admin, admin_question], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<% @nav_selected_item = 'question' %>
+
+<% content_for :search_bar do %>
+  <form action="/admin/"  method="get">
+    <input type="text" name="q" class="search-query span3" value="<%= params[:q] %>" placeholder="搜索" />
+    <input type="submit" value="搜索" />
+  </form>
+<% end %>
+
+<% content_for :site_nav do %>
+  <%= link_to '后台', admin_root_path, :class => 'first' %>
+  <span class="sep">&gt;</span>
+  <%= link_to '问答', admin_questions_path %>
+  <span class="sep">&gt;</span>
+  <span>列表</spanl>
+<% end %>

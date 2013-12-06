@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @car_model.name %>
+</p>
+
+<p>
+  <b>Price low:</b>
+  <%= @car_model.price_low %>
+</p>
+
+<p>
+  <b>Price top:</b>
+  <%= @car_model.price_top %>
+</p>
+
+<p>
+  <b>Pailiang:</b>
+  <%= @car_model.pailiang %>
+</p>
+
+<p>
+  <b>Biansuxiang:</b>
+  <%= @car_model.biansuxiang %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @car_model.status %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @car_model.country %>
+</p>
+
+<p>
+  <b>Summary:</b>
+  <%= @car_model.summary %>
+</p>
+
+<p>
+  <b>Car type:</b>
+  <%= @car_model.car_type %>
+</p>
+
+<p>
+  <b>Car use:</b>
+  <%= @car_model.car_use %>
+</p>
+
+<p>
+  <b>Temp pic url:</b>
+  <%= @car_model.temp_pic_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_car_model_path(@car_model) %> |
+<%= link_to 'Back', car_models_path %>

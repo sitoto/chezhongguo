@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @autopart.name %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @autopart.price %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%= @autopart.image %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @autopart.description %>
+</p>
+
+<p>
+  <b>Remote url:</b>
+  <%= @autopart.remote_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_autopart_path(@autopart) %> |
+<%= link_to 'Back', autoparts_path %>

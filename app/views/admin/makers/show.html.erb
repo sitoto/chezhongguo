@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @admin_maker.name %>
+</p>
+
+<p>
+  <b>Name pinyin:</b>
+  <%= @admin_maker.name_pinyin %>
+</p>
+
+<p>
+  <b>Summary:</b>
+  <%= @admin_maker.summary %>
+</p>
+
+<p>
+  <b>Site:</b>
+  <%= @admin_maker.site %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_maker_path(@admin_maker) %> |
+<%= link_to 'Back', admin_makers_path %>

@@ -1,0 +1,17 @@
+<div id="questions">
+  <%= render 'questions/nav' %>
+  <div class="lt">
+    <%= render :partial => 'list', :locals => {:items => @questions} %> 
+  </div>
+  <div class="rt">
+    <%= render 'questions/sidebar' %>
+  </div>
+</div>
+
+<div class="clear_both"></div>
+
+
+
+<% content_for :search_form do %>
+  <%= render 'questions/form_search' %>
+<% end %>

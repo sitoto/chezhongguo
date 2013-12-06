@@ -1,0 +1,51 @@
+<h1>Listing users</h1>
+
+<table class="table table-bordered table-striped table-condensed">
+  <tr class="head">
+    <th>Id</th>>
+    <th>Login</th>
+    <th>Name</th>
+    <th>Location</th>
+    <th>Location</th>
+    <th>Bio</th>
+    <th>Website</th>
+    <th>Company</th>
+    <th>Weibo</th>
+    <th>Qq</th>
+    <th>Email</th>
+    <th>Email public</th>
+    <th>Sign in count</th>
+    <th>Current sign in at</th>
+    <th>Last sign in at</th>
+    <th>Current sign in ip</th>
+    <th>Last sign in ip</th>
+    <th>操作</th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.id%></td>
+    <td><%= user.login %></td>
+    <td><%= user.name %></td>
+    <td><%= user.location %></td>
+    <td><%= user.location_id %></td>
+    <td><%= user.bio %></td>
+    <td><%= user.website %></td>
+    <td><%= user.company %></td>
+    <td><%= user.weibo %></td>
+    <td><%= user.qq %></td>
+    <td><%= user.email %></td>
+    <td><%= user.email_public %></td>
+    <td><%= user.sign_in_count %></td>
+    <td><%= user.current_sign_in_at %></td>
+    <td><%= user.last_sign_in_at %></td>
+    <td><%= user.current_sign_in_ip %></td>
+    <td><%= user.last_sign_in_ip %></td>
+    <td><%= link_to 'Edit', edit_admin_user_path(user),:class => "icon small_edit" %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User', new_admin_user_path %>

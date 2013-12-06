@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>管理后台-帮您配汽车网</title>
+    <%= stylesheet_link_tag    "admin", :media => "all" %>
+    <%= javascript_include_tag "admin" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="container">
+      <%= render 'layouts/admin/header' %>
+      <div id="main">
+        <% if content_for?(:left) %>
+          <div id="main_wrapper">
+            <div id="main_left">
+              <%= yield :left %>
+            </div>
+            <div id="main_right">
+              <%= yield :right %>
+            </div>
+          </div>
+          <div class="clear_both"></div>
+        <% elsif %>
+          <%= yield %>
+        <%end%>
+      </div>
+      <%= render 'layouts/admin/footer' %>
+    </div>
+  </body>
+</html>
+

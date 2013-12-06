@@ -1,0 +1,31 @@
+<h1>Listing admin_makers</h1>
+
+<table>
+  <tr>
+    <th>Brand_ID</th>
+    <th>Name</th>
+    <th>Name pinyin</th>
+    <th>Summary</th>
+    <th>Site</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @admin_makers.each do |maker| %>
+  <tr>
+    <td><%= maker.brand_id %></td>
+    <td><%= maker.name %></td>
+    <td><%= maker.name_pinyin %></td>
+    <td><%= maker.summary %></td>
+    <td><%= maker.site %></td>
+    <td><%= link_to 'Show', admin_maker_path(maker) %></td>
+    <td><%= link_to 'Edit', edit_admin_maker_path(maker) %></td>
+    <td><%= link_to 'Destroy', admin_maker_path(maker), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Maker', new_admin_maker_path %>

@@ -1,0 +1,178 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#questions {
+  float: left;
+  width: 960px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+#questions .lt {
+  float: left;
+  width: 550px;
+  padding: 30px;
+  padding-right: 0;
+}
+#questions .rt {
+  float: right;
+  width: 320px;
+  padding: 30px;
+}
+
+
+#questions .nav {
+  padding: 1px 1px 0 1px;
+  height: 36px;
+  line-height: 36px;
+  background-color: #fbfbfb;
+  border-top: solid 1px #f0f0f0;
+  border-bottom: solid 1px #ccc;
+  overflow: hidden;
+}
+#questions .nav a {
+  font-size: 16px;
+  color: #666;
+  padding: 0 10px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden;
+}
+#questions .nav a:hover {
+  background-color: #f60;
+  color: #fff;
+}
+#questions .nav .selected_index a.index,
+#questions .nav .selected_tags a.tags,
+#questions .nav .selected_experts a.experts,
+#questions .nav .selected_unanswered a.unanswered,
+#questions .nav .selected_my a.my,
+#questions .nav a.selected {
+  background-color: #ccc;
+  color: #fff;
+  font-weight: bold;
+}
+
+#questions .list {
+}
+#questions .list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  width: 550px;
+  float: left;
+  overflow: hidden;
+}
+#questions .list ul li {
+  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
+  list-style: none;
+  display: block;
+  border-bottom: solid 1px #ebebeb;
+  width: 550px;
+  float: left;
+  overflow: hidden;
+}
+#questions .list ul li .left {
+  display: block;
+  float: left;
+  padding-right: 7px;
+  background: image-url('bg_right_arrow_001.gif') no-repeat right 5px;
+  width: 75px;
+  overflow: hidden;
+}
+#questions .list ul li .right {
+  display: block;
+  float: right;
+  width: 460px;
+  overflow: hidden;
+}
+#questions .list ul li .left label {
+  display: block;
+  text-align: center;
+}
+#questions .list ul li .left label * {
+  font-style: normal;
+}
+#questions .list ul li .left label.zc {
+  background-color: #eee;
+}
+#questions .list ul li .left label.zc b {
+  display: block;
+  height: 38px;
+  line-height: 38px;
+  font-size: 22px;
+  color: #808185;
+}
+#questions .list ul li .left label.zc em {
+  display: block;
+  height: 14px;
+  line-height: 12px;
+  font-size: 12px;
+  color: #ccc;
+}
+#questions .list ul li .left label.ac {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #eee;
+}
+#questions .list ul li .left label.ac b {
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  font-size: 16px;
+  color: #9a4444;
+}
+#questions .list ul li .left label.ac em {
+  display: block;
+  height: 14px;
+  line-height: 12px;
+  font-size: 12px;
+  color: #9a4444;
+}
+#questions .list ul li .left label.vc {
+  display: block;
+  line-height: 25px;
+  color: #ccc;
+}
+#questions .list ul li .left label.vc b {
+  font-weight: normal;
+  font-size: 10px;
+}
+#questions .list a.title {
+  line-height: 20px;
+  font-size: 16px;
+  background: none;
+  color: #0078b6;
+  text-decoration: none;
+}
+#questions .list a.title:hover {
+  text-decoration: underline;
+}
+#questions .list p {
+  margin: 0;
+  padding: 5px 0;
+  line-height: 2em; 
+  font-size:12px;
+  color: #666;
+}
+
+#questions .question_show .title {
+  margin: 0;
+  padding: 0 0 20px 0;
+  line-height: 1.6em;
+  font-family: 微软雅黑;
+  font-size: 30px;
+  color: #000;
+}
+#questions .question_show p {
+  margin: 0;
+  padding: 5px 0;
+  line-height: 2em; 
+  font-size:16px;
+  color: #666;
+}

@@ -1,0 +1,37 @@
+<% if false %>
+  <table>
+    <tr>
+      <th>图</th>
+      <th>名称</th>
+      <th>品牌</th>
+      <th>价格</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+
+    <% items.each do |car| %>
+      <tr>
+        <td><%= image_tag car.image_url(:thumb).to_s %></td>
+        <td><%= car.name %></td>
+        <td><%= car.brand %></td>
+        <td><%= car.price %></td>
+        <td><%= car.car_use %></td>
+        <td><%= car.car_type %></td>
+        <td><%= link_to '查看', car %></td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>
+
+<div class="list">
+  <ul>
+    <% items.each do |car| %>
+      <li>
+      <%= link_to image_tag(car.image_url(:thumb).to_s), car, :class => 'img' %>
+      <%= link_to car.name, car, :class => 'name' %>
+      </li>
+    <% end %>  
+  </ul>
+  <div class="clear_both"></div>
+</div>

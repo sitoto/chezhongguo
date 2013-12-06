@@ -1,0 +1,45 @@
+<div class="tools_bar">
+  <span class="right">
+    <%= link_to '新增', new_admin_brand_path, class: "btn btn-primary" %>
+  </span>
+  <%= paginate @brands %>
+</div>
+<table class="list">
+  <tr>
+    <th>ID</th>
+    <th>品牌</th>
+    <th>拼音</th>
+    <th>国家</th>
+    <th>操作</th>
+  </tr>
+  <% @brands.each do |admin_brand| %>
+    <tr>
+      <td style="width:10px; white-space:nowrap;"><%= admin_brand.id %></td>
+      <td><%= link_to admin_brand.name, brand_path(admin_brand.id), :target => '_blank' %></td>
+      <td><%= admin_brand.name_pinyin %></td>
+      <td style="width:10px; white-space:nowrap;"><%= admin_brand.country %></td>
+      <td class="operation">
+        <%= link_to '详细', [:admin, admin_brand] %>
+        <%= link_to '编辑', edit_admin_brand_path(admin_brand) %>
+        <%= link_to '删除', [:admin, admin_brand], method: :delete, data: { confirm: 'Are you sure?' } %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+
+<% @nav_selected_item = 'brand' %>
+
+<% content_for :search_bar do %>
+  <form action="/admin/brands"  method="get">
+    <input type="text" name="q" class="search-query span3" value="<%= params[:q] %>" placeholder="搜索" />
+    <input type="submit" value="搜索" />
+  </form>
+<% end %>
+
+<% content_for :site_nav do %>
+  <%= link_to '后台', admin_root_path, :class => 'first' %>
+  <span class="sep">&gt;</span>
+  <%= link_to '品牌', admin_brands_path %>
+  <span class="sep">&gt;</span>
+  <span>列表</span>
+<% end %>

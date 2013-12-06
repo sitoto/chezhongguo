@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+<%= image_tag @car.image_url.to_s %>
+</p>
+<p>
+  <b>Name:</b>
+  <%= @car.name %>
+</p>
+
+<p>
+  <b>Name pinyin:</b>
+  <%= @car.name_pinyin %>
+</p>
+
+<p>
+  <b>Brand:</b>
+  <%= @car.brand %>
+</p>
+
+<p>
+  <b>Model:</b>
+  <%= @car.model %>
+</p>
+
+<p>
+  <b>Maker:</b>
+  <%= @car.maker %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%= @car.year %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @car.price %>
+</p>
+
+<p>
+  <b>Use:</b>
+  <%= @car.car_use %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @car.car_type %>
+</p>
+
+<% if can? :update, @car %>
+  <%= link_to 'Edit', edit_car_path(@car) %> |
+<% end %>
+<%= link_to 'Back', cars_path %>
+
+<% if @car.parameters.size > 0 %>
+  <h2>参数</h2>
+  <% for parameter in @car.parameters %>
+    <p><strong><%= parameter.name %></strong>：<%= parameter.value %></p>
+  <% end %>
+<% end %>
+<% if can? :update, @car %>
+  <h2>增加参数</h2>
+  <%= form_for [@car, Parameter.new] do |f| %>
+    <p><%= f.label :name %> <%= f.text_field :name %></p>
+    <p><%= f.text_area :value, :rows => 10 %></p>
+    <p><%= f.submit "新增" %></p>
+  <% end %>
+<% end %>

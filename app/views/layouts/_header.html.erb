@@ -1,0 +1,39 @@
+<div id="top">
+  <div class="c">
+    <div class="lt">
+      <div id="nav">
+        <ul>
+          <li class="home"><%= link_to '首页', root_path %></li>
+          <li class="car"><%= link_to '看车', car_models_path %></li>
+          <li class="brand"><%= link_to '品牌', brands_path %></li>
+          <li class="peijian"><%= link_to '配件', autoparts_path %></li>
+          <li class="wenda"><%= link_to '问答', questions_path %></li>
+          <li class="zixun"><%= link_to '资讯', root_path %></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rt">
+      <% if user_signed_in? %>
+        <%= link_to current_user.name, edit_user_registration_path %> 
+      <%= link_to '退出', destroy_user_session_path, :method=>'delete' %>        
+    <% else %>
+        <%= link_to '登录', new_user_session_path %>  
+      <%= link_to '注册', new_user_registration_path %>
+    <% end %>
+    </div>
+  </div>
+</div>
+
+<%= render 'layouts/messages' %>
+
+<div id="logo_search">
+  <%= link_to (image_tag 'logo.gif',:alt=>"首页"), root_path, :class => "logo" %>
+  <div class="search">
+    <% if content_for?(:search_form) %>
+      <%= yield :search_form %> 
+    <% elsif %>
+      <%= render 'cars/form_search' %>
+    <% end %>
+  </div>
+</div>
+

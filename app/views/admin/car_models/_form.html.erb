@@ -1,0 +1,53 @@
+<%= form_for([:admin, @admin_car_model], :html => {:multipart => true } ) do |f| %>
+  <% if @admin_car_model.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@admin_car_model.errors.count, "error") %> prohibited this admin_car_model from being saved:</h2>
+
+      <ul>
+      <% @admin_car_model.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :name_pinyin %><br />
+    <%= f.text_field :name_pinyin %>
+  </div>
+  <div class="field">
+    <%= f.label :price_low %><br />
+    <%= f.text_field :price_low %>
+  </div>
+  <div class="field">
+    <%= f.label :price_top %><br />
+    <%= f.text_field :price_top %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :country %><br />
+    <%= f.text_field :country %>
+  </div>
+  <div class="field">
+    <%= f.label :summary %><br />
+    <%= f.text_field :summary %>
+  </div>
+  <div class="field">
+    <%= f.label :car_type %><br />
+    <%= f.text_field :car_type %>
+  </div>
+  <div class="field">
+    <%= f.label :car_use %><br />
+    <%= f.text_field :car_use %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

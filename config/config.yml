@@ -1,0 +1,16 @@
+#encoding: utf-8
+defaults: &defaults
+  app_name: "帮您配"
+
+  admin_emails:
+        - "admin@80pei.com"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
+

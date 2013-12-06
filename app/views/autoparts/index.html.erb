@@ -1,0 +1,31 @@
+<h1>Listing autoparts</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Image</th>
+    <th>Description</th>
+    <th>Remote url</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @autoparts.each do |autopart| %>
+  <tr>
+    <td><%= autopart.name %></td>
+    <td><%= autopart.price %></td>
+    <td><%= autopart.image %></td>
+    <td><%= autopart.description %></td>
+    <td><%= autopart.remote_url %></td>
+    <td><%= link_to 'Show', autopart %></td>
+    <td><%= link_to 'Edit', edit_autopart_path(autopart) %></td>
+    <td><%= link_to 'Destroy', autopart, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Autopart', new_autopart_path %>

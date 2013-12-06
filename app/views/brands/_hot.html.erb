@@ -1,0 +1,14 @@
+<div class="brand_list">
+  <div class="title_bar"><h3 class="title"><%= title %></h3></div>
+  <div class="list">
+    <ul>
+      <% items.each do |brand| %>
+        <li>
+        <%= link_to image_tag(brand.logo_image.to_s), brand, :class => 'img' %>
+        <%= link_to brand.name, brand, :class => 'name' %>
+        </li>
+      <% end %>  
+    </ul>
+    <div class="clear_both"></div>
+  </div>
+</div>

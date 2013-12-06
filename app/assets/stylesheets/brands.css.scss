@@ -1,0 +1,14 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.brand_list{border-top:solid 4px #999; background:#FFF;  margin-bottom:10px;}
+.brand_list .title_bar{}
+.brand_list .title_bar .title{margin:0; padding:0; width:100px; height:30px; line-height:30px; background:#ccc; font-size:14px; color:#000; text-align:center;}
+.brand_list .list{overflow:hidden;}
+.brand_list .list ul{display:block; margin:30px 0 20px 38px; padding:0; width:900px; list-style:none; overflow:hidden; float:left;}
+.brand_list .list ul li{display:block; margin:0 10px 10px 0; padding:0; list-style:none; overflow:hidden; float:left; width:102px; height:132px; text-align:center;}
+.brand_list .list ul li a.img{display:block; width:100px; height:100px; border:solid 1px #fff; overflow:hidden;}
+.brand_list .list ul li a.img:hover{border-color:#ccc;}
+.brand_list .list ul li a.img img{border:none;}
+.brand_list .list ul li a.name{line-height:30px;}

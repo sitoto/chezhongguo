@@ -1,0 +1,7 @@
+<form action="/questions/search"  method="get" name="search">
+  <div class="text_border">
+    <input type="text" name="q" class="q" value="<%= params[:q] %>" placeholder="请输入您要查询的问题" />
+  </div>
+  <a class="btn btn_submit" href="javascript:document.search.submit();">搜索问答</a>
+  <%= link_to '我要提问', new_question_path, :class => 'btn' %>
+</form>

@@ -1,0 +1,33 @@
+<%= form_for([:admin, @admin_node]) do |f| %>
+  <% if @admin_node.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@admin_node.errors.count, "error") %> prohibited this admin_node from being saved:</h2>
+
+      <ul>
+      <% @admin_node.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :summary %><br />
+    <%= f.text_field :summary %>
+  </div>
+  <div class="field">
+    <%= f.label :sort %><br />
+    <%= f.number_field :sort %>
+  </div>
+  <div class="field">
+    <%= f.label :questions_count %><br />
+    <%= f.number_field :questions_count %>
+  </div>
+  <div class="actions">
+    <%= f.submit :class => "btn btn-primary" %>
+  </div>
+<% end %>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <%= render_page_title %>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= yield :styles %>
+
+    <% if mobile? %>
+      <%= stylesheet_link_tag "mobile" %>
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta content='True' name='HandheldFriendly' />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <% end %>
+
+    <meta name="keywords" content="<%= @meta_keywords %>" />
+    <meta name="description" content="<%= @meta_description %>" />
+    <meta charset="utf-8">
+
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="container" class="container">
+      <%= render 'layouts/header' %>
+      <div id="main" role="main">
+        <% if content_for?(:site_nav) %>
+          <div id="site_nav">
+            <%= yield :site_nav %>
+          </div>
+        <% end %>
+        <% if content_for?(:left) %>
+          <div id="main_wrapper">
+            <div id="main_left">
+              <%= yield :left %>
+            </div>
+            <div id="main_right">
+              <%= yield :right %>
+            </div>
+          </div>
+          <div class="clear_both"></div>
+        <% elsif %>
+          <%= yield %>
+        <%end%>
+      </div>
+      <%= render 'layouts/footer' %>
+    </div> <!--! end of #container -->
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>

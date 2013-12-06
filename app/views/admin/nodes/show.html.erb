@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @admin_node.name %>
+</p>
+
+<p>
+  <b>Summary:</b>
+  <%= @admin_node.summary %>
+</p>
+
+<p>
+  <b>Sort:</b>
+  <%= @admin_node.sort %>
+</p>
+
+<p>
+  <b>Questions count:</b>
+  <%= @admin_node.questions_count %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_node_path(@admin_node) %> |
+<%= link_to 'Back', admin_nodes_path %>

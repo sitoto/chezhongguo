@@ -1,0 +1,29 @@
+<div style="height:100px; background:#fff; margin-bottom:10px;"></div>
+<div id="cars">
+  <div class="lt">
+    <%= render :partial => 'brands_selector' %>
+  </div>
+  <div class="rt">
+    <div class="more_selector">
+      <div class="row">
+        <label>价格：</label>
+        <span></span>
+      </div>
+      <div class="row">
+        <label>级别：</label>
+        <span></span>
+      </div>
+      <div class="row">
+        <label>国别：</label>
+        <span></span>
+      </div>
+    </div>
+    <div class="car_list">
+      <%= render :partial => 'shares/list', :locals => {:items => @car_models} %> 
+    </div>
+    <%= paginate @car_models %>
+  </div>
+</div>
+
+<div class="clear_both"></div>
+

@@ -1,0 +1,41 @@
+<div id="header">
+  <div class="nav">
+    <ul class="<%= @nav_selected_item %>">
+      <li class="home"><%= link_to '帮您配汽车网后台', admin_root_path %></li>
+      <li class="car_model"><%= link_to '车型', admin_car_models_path %></li>
+      <li class="car"><%= link_to '车款', admin_cars_path %></li>
+      <li class="brand"><%= link_to '品牌', admin_brands_path %></li>
+      <li class="news"><%= link_to '资讯', admin_brands_path %></li>
+      <li class="aq"><%= link_to '问答', admin_questions_path %></li>
+      <li class="node"><%= link_to '节点', admin_nodes_path %></li>
+      <li class="user"><%= link_to '用户', admin_users_path %></li>
+      <li class="more"><a href="javascript:">更多<b class="caret"></b></a></li>
+    </ul>
+    <span class="right">
+      <% if user_signed_in? %>
+        <label><%= link_to current_user.name, edit_user_registration_path %></label> 
+        <%= link_to '退出', destroy_user_session_path, :method=>'delete' %>        
+      <% else %>
+        <%= link_to '登录', new_user_session_path %>  
+        <%= link_to '注册', new_user_registration_path %>
+      <% end %>
+    </span>
+  </div>
+  <% if content_for?(:search_bar) %>
+    <div id="search_bar">
+      <%= yield :search_bar %>
+    </div>
+  <% end %>
+  <% if content_for?(:site_nav) %>
+    <div id="site_nav">
+      <%= yield :site_nav %>
+    </div>
+  <% end %>
+</div>
+<div class="nav_more_menu">
+  <ul>
+    <li><%= link_to '参数设置', admin_root_path %></li>
+    <li><%= link_to '权限管理', admin_root_path %></li>
+    <li><%= link_to '修改密码', admin_root_path %></li>
+  </ul>
+</div>

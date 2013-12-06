@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @admin_question.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @admin_question.content %>
+</p>
+
+<p>
+  <b>Good:</b>
+  <%= @admin_question.good %>
+</p>
+
+<p>
+  <b>Bad:</b>
+  <%= @admin_question.bad %>
+</p>
+
+<p>
+  <b>Answers count:</b>
+  <%= @admin_question.answers_count %>
+</p>
+
+<p>
+  <b>Views count:</b>
+  <%= @admin_question.views_count %>
+</p>
+
+<p>
+  <b>Replied at:</b>
+  <%= @admin_question.replied_at %>
+</p>
+
+<p>
+  <b>Suggested at:</b>
+  <%= @admin_question.suggested_at %>
+</p>
+
+<p>
+  <b>Node name:</b>
+  <%= @admin_question.node_name %>
+</p>
+
+<p>
+  <b>Who deleted:</b>
+  <%= @admin_question.who_deleted %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_question_path(@admin_question) %> |
+<%= link_to 'Back', admin_questions_path %>

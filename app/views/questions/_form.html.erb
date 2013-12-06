@@ -1,0 +1,30 @@
+<%= form_for(@question) do |f| %>
+  <% if @question.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@question.errors.count, "error") %> prohibited this question from being saved:</h2>
+
+      <ul>
+        <% @question.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <span class="node_select span2">
+    <%= f.label '分类' %>
+    <%= render_question_node_select_tag(@question) %>
+  </span>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :content %>
+    <%= f.text_area  :content, :style => "height:400px"  %>
+  </div>
+  <div class="actions">
+    <%= f.submit '提交问题', :class => 'm_btn' %>
+  </div>
+<% end %>

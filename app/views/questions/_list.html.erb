@@ -1,0 +1,27 @@
+<div class="list">
+  <ul>
+    <% items.each do |question| %>
+      <li>
+        <span class="left">
+          <label class="zc">
+            <b><%= question.good-question.bad %></b>
+            <em>支持</em>
+          </label>
+          <label class="ac">
+            <b><%= question.answers_count %></b>
+            <em>回复</em>
+          </label>
+          <label class="vc">
+            <b><%= question.views_count %></b>
+            <em>查看</em>
+          </label>
+        </span>
+        <span class="right">
+          <%= link_to question.title, question, :class => 'title'  %>
+          <p><%= question.content %></p>
+        </span>
+      </li>
+    <% end %>
+  </ul>
+  <div class="clear_both"></div>
+</div>

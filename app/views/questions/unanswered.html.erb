@@ -1,0 +1,18 @@
+<div id="questions">
+  <% @questions_nav_selected_item = 'selected_unanswered' %>
+  <%= render 'nav' %>
+  <div class="lt">
+    未解决问题 
+  </div>
+  <div class="rt">
+    <%= render 'sidebar' %>
+  </div>
+</div>
+
+<div class="clear_both"></div>
+
+
+
+<% content_for :search_form do %>
+  <%= render 'form_search' %>
+<% end %>

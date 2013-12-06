@@ -1,0 +1,18 @@
+<div id="questions">
+  <% @questions_nav_selected_item = 'selected_tags' %>
+  <%= render 'nav' %>
+  <div class="lt">
+    分类浏览
+  </div>
+  <div class="rt">
+    <%= render 'questions/sidebar' %>
+  </div>
+</div>
+
+<div class="clear_both"></div>
+
+
+
+<% content_for :search_form do %>
+  <%= render 'form_search' %>
+<% end %>
