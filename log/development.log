@@ -1,0 +1,628 @@
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-07 23:17:41 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Compiled application.css  (16ms)  (pid 5802)
+  Rendered layouts/_messages.html.erb (0.9ms)
+  Rendered cars/_form_search.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (8.3ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Compiled application.js  (0ms)  (pid 5802)
+Completed 200 OK in 49ms (Views: 49.1ms)
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2013-12-07 23:17:41 +0800
+Served asset /logo.gif - 200 OK (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-07 23:17:41 +0800
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-07 23:17:41 +0800
+Served asset /application.js - 200 OK (2ms)
+
+
+Started GET "/car_models" for 127.0.0.1 at 2013-12-07 23:17:44 +0800
+Processing by CarModelsController#index as HTML
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} (317.8148ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=0 skip=0 fields=nil (2190.4476ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=20 skip=0 fields=nil (176.0943ms)
+  Rendered shares/_brands_selector_hot.html.erb (186.7ms)
+  Rendered shares/_brands_selector_list.html.erb (2.8ms)
+  Rendered shares/_brands_selector_list.html.erb (31.6ms)
+  Rendered shares/_brands_selector_list.html.erb (2.2ms)
+  Rendered shares/_brands_selector_list.html.erb (4.4ms)
+  Rendered shares/_brands_selector_list.html.erb (13.2ms)
+  Rendered car_models/_brands_selector.html.erb (244.1ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=car_models selector={} flags=[] limit=25 skip=0 fields=nil (155.9587ms)
+  MOPED: 211.101.12.237:27017 KILL_CURSORS cursor_ids=[3948592706331654150] (0.0870ms)
+  Rendered shares/_list.html.erb (175.5ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=chezhongguo_development command={:count=>"car_models", :query=>{}} (48.0726ms)
+  Rendered car_models/index.html.erb within layouts/application (543.9ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered cars/_form_search.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 3079ms (Views: 552.3ms)
+
+
+Started GET "/assets/default-car.png" for 127.0.0.1 at 2013-12-07 23:17:47 +0800
+Served asset /default-car.png - 200 OK (1ms)
+
+
+Started GET "/brands/505d9e2c96a6370f3c000001" for 127.0.0.1 at 2013-12-07 23:18:00 +0800
+Processing by BrandsController#show as HTML
+  Parameters: {"id"=>"505d9e2c96a6370f3c000001"}
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"_id"=>"505d9e2c96a6370f3c000001"} flags=[] limit=0 skip=0 fields=nil (48.5654ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=chezhongguo_development command={:count=>"makers", :query=>{"brand_id"=>"505d9e2c96a6370f3c000001"}} (127.8369ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=makers selector={"brand_id"=>"505d9e2c96a6370f3c000001"} flags=[] limit=0 skip=0 fields=nil (67.6322ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=car_models selector={"maker_id"=>"509634e296a637131f000017"} flags=[] limit=0 skip=0 fields=nil (134.1805ms)
+  Rendered brands/show.html.erb within layouts/application (352.9ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (32.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 442ms (Views: 391.9ms)
+
+
+Started GET "/images/brand/25c8ecb9fb61433849f4c99cdbf7cf41.jpg" for 127.0.0.1 at 2013-12-07 23:18:00 +0800
+
+
+Started GET "/brands" for 127.0.0.1 at 2013-12-07 23:18:04 +0800
+Processing by BrandsController#index as HTML
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={} flags=[] limit=0 skip=0 fields=nil (749.0697ms)
+  MOPED: 211.101.12.237:27017 GET_MORE     database=chezhongguo_development collection=brands limit=0 cursor_id=3948665248692730558 (381.3343ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=20 skip=0 fields=nil (184.0291ms)
+  Rendered brands/_hot.html.erb (203.1ms)
+  Rendered brands/_list.html.erb (5.5ms)
+  Rendered brands/_list.html.erb (5.9ms)
+  Rendered brands/_list.html.erb (4.5ms)
+  Rendered brands/_list.html.erb (41.0ms)
+  Rendered brands/_list.html.erb (61.6ms)
+  Rendered brands/index.html.erb within layouts/application (325.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 1466ms (Views: 331.3ms)
+
+
+Started GET "/images/brand/622e55d240977d456ba82c14659a5dba.jpg" for 127.0.0.1 at 2013-12-07 23:18:06 +0800
+
+
+Started GET "/images/brand/a09cde3086e4e1b23ee018230a8d3544.jpg" for 127.0.0.1 at 2013-12-07 23:18:06 +0800
+
+
+Started GET "/images/brand/4797f4fe1d7bbc5b3e3cc6c1b37ece18.jpg" for 127.0.0.1 at 2013-12-07 23:18:06 +0800
+
+
+Started GET "/images/brand/46d5408e319fd3cc9e95261c74ce18bb.jpg" for 127.0.0.1 at 2013-12-07 23:18:07 +0800
+
+
+Started GET "/images/brand/25c8ecb9fb61433849f4c99cdbf7cf41.jpg" for 127.0.0.1 at 2013-12-07 23:18:07 +0800
+
+
+Started GET "/images/brand/e697896f92da2b78e7a718582b8d2976.jpg" for 127.0.0.1 at 2013-12-07 23:18:08 +0800
+
+
+Started GET "/images/brand/958bd2b3f9c0433d47ec62448c659b49.jpg" for 127.0.0.1 at 2013-12-07 23:18:08 +0800
+
+
+Started GET "/images/brand/462860a39a494749cc576d098e6e987c.jpg" for 127.0.0.1 at 2013-12-07 23:18:08 +0800
+
+
+Started GET "/images/brand/a7a8615a918eee2f8328b0be5928ca98.jpg" for 127.0.0.1 at 2013-12-07 23:18:09 +0800
+
+
+Started GET "/images/brand/8f7072eaacf6192746eeead8660d9f01.jpg" for 127.0.0.1 at 2013-12-07 23:18:09 +0800
+
+
+Started GET "/images/brand/6cecdc5d367b226906d7c5f44167004c.jpg" for 127.0.0.1 at 2013-12-07 23:18:09 +0800
+
+
+Started GET "/images/brand/b21d0d6e946fc5bf663d2005db799b94.jpg" for 127.0.0.1 at 2013-12-07 23:18:11 +0800
+
+
+Started GET "/images/brand/a51d66433414f0c505cc68fc5eaeeb06.jpg" for 127.0.0.1 at 2013-12-07 23:18:11 +0800
+
+
+Started GET "/images/brand/a6a6be356a91cebf5881af617e0467d3.jpg" for 127.0.0.1 at 2013-12-07 23:18:11 +0800
+
+
+Started GET "/images/brand/e94582e8f3d2cad5f589d5296fb2ee82.jpg" for 127.0.0.1 at 2013-12-07 23:18:12 +0800
+
+
+Started GET "/images/brand/4239097e123715a310e7365789924c3a.jpg" for 127.0.0.1 at 2013-12-07 23:18:12 +0800
+
+
+Started GET "/assets/default.png" for 127.0.0.1 at 2013-12-07 23:18:12 +0800
+Served asset /default.png - 404 Not Found (25ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/default.png"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/images/brand/68d848b82922289ffee336a0bca2169d.jpg" for 127.0.0.1 at 2013-12-07 23:18:12 +0800
+
+
+Started GET "/images/brand/05353f8da977fa8a838e31b35b0592d3.jpg" for 127.0.0.1 at 2013-12-07 23:18:13 +0800
+
+
+Started GET "/autoparts" for 127.0.0.1 at 2013-12-07 23:18:13 +0800
+Processing by AutopartsController#index as HTML
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} (124.5461ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=autoparts selector={} flags=[] limit=0 skip=0 fields=nil (117.2576ms)
+  Rendered autoparts/index.html.erb within layouts/application (246.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 258ms (Views: 257.4ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2013-12-07 23:18:15 +0800
+Processing by QuestionsController#index as HTML
+  Rendered questions/_nav.html.erb (1.3ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=questions selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=0 skip=0 fields=nil (78.9456ms)
+  Rendered questions/_list.html.erb (86.0ms)
+  Rendered questions/_sidebar.html.erb (0.4ms)
+  Rendered questions/_form_search.html.erb (1.2ms)
+  Rendered questions/index.html.erb within layouts/application (91.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 102ms (Views: 101.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-07 23:18:24 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered cars/_form_search.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 7ms (Views: 7.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-12-07 23:18:28 +0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 13ms (Views: 11.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-12-07 23:18:31 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered cars/_form_search.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 13ms (Views: 11.2ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-12-07 23:18:33 +0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered cars/_form_search.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 15ms (Views: 13.9ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-12-07 23:18:34 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (34.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 45ms (Views: 44.4ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-12-07 23:18:35 +0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 14ms (Views: 13.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-12-07 23:18:35 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 15ms (Views: 14.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-12-07 23:18:36 +0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 14ms (Views: 13.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-12-07 23:18:36 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 15ms (Views: 14.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2013-12-07 23:18:37 +0800
+Processing by QuestionsController#index as HTML
+  Rendered questions/_nav.html.erb (1.5ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=questions selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=0 skip=0 fields=nil (55.9039ms)
+  Rendered questions/_list.html.erb (61.2ms)
+  Rendered questions/_sidebar.html.erb (0.1ms)
+  Rendered questions/_form_search.html.erb (0.4ms)
+  Rendered questions/index.html.erb within layouts/application (65.9ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 73ms (Views: 72.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-07 23:18:38 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (35.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 40.4ms)
+
+
+Started GET "/car_models" for 127.0.0.1 at 2013-12-07 23:18:40 +0800
+Processing by CarModelsController#index as HTML
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=0 skip=0 fields=nil (1204.2606ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=20 skip=0 fields=nil (178.1058ms)
+  Rendered shares/_brands_selector_hot.html.erb (187.2ms)
+  Rendered shares/_brands_selector_list.html.erb (4.0ms)
+  Rendered shares/_brands_selector_list.html.erb (2.8ms)
+  Rendered shares/_brands_selector_list.html.erb (1.9ms)
+  Rendered shares/_brands_selector_list.html.erb (4.3ms)
+  Rendered shares/_brands_selector_list.html.erb (43.4ms)
+  Rendered car_models/_brands_selector.html.erb (246.4ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=car_models selector={} flags=[] limit=25 skip=0 fields=nil (101.0990ms)
+  MOPED: 211.101.12.237:27017 KILL_CURSORS cursor_ids=[3948823849177411139] (0.0749ms)
+  Rendered shares/_list.html.erb (119.2ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=chezhongguo_development command={:count=>"car_models", :query=>{}} (50.2245ms)
+  Rendered car_models/index.html.erb within layouts/application (426.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 1646ms (Views: 436.2ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2013-12-07 23:18:42 +0800
+Processing by BrandsController#index as HTML
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} (120.0736ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={} flags=[] limit=0 skip=0 fields=nil (1210.0644ms)
+  MOPED: 211.101.12.237:27017 GET_MORE     database=chezhongguo_development collection=brands limit=0 cursor_id=3948825162432523739 (410.3546ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=20 skip=0 fields=nil (184.5238ms)
+  Rendered brands/_hot.html.erb (198.6ms)
+  Rendered brands/_list.html.erb (37.3ms)
+  Rendered brands/_list.html.erb (6.2ms)
+  Rendered brands/_list.html.erb (4.7ms)
+  Rendered brands/_list.html.erb (10.7ms)
+  Rendered brands/_list.html.erb (62.9ms)
+  Rendered brands/index.html.erb within layouts/application (323.2ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered cars/_form_search.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 2076ms (Views: 329.3ms)
+
+
+Started GET "/autoparts" for 127.0.0.1 at 2013-12-07 23:18:44 +0800
+Processing by AutopartsController#index as HTML
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} (1019.9234ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=autoparts selector={} flags=[] limit=0 skip=0 fields=nil (82.9952ms)
+  Rendered autoparts/index.html.erb within layouts/application (1107.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 1116ms (Views: 1115.9ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2013-12-07 23:18:45 +0800
+Processing by BrandsController#index as HTML
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} (99.6215ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={} flags=[] limit=0 skip=0 fields=nil (795.7323ms)
+  MOPED: 211.101.12.237:27017 GET_MORE     database=chezhongguo_development collection=brands limit=0 cursor_id=3948838639161567180 (362.3748ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=20 skip=0 fields=nil (177.1712ms)
+  Rendered brands/_hot.html.erb (226.9ms)
+  Rendered brands/_list.html.erb (4.8ms)
+  Rendered brands/_list.html.erb (6.2ms)
+  Rendered brands/_list.html.erb (4.6ms)
+  Rendered brands/_list.html.erb (11.0ms)
+  Rendered brands/_list.html.erb (61.8ms)
+  Rendered brands/index.html.erb within layouts/application (317.8ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 1586ms (Views: 323.8ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2013-12-07 23:18:46 +0800
+Processing by BrandsController#index as HTML
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} (96.2591ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={} flags=[] limit=0 skip=0 fields=nil (880.3751ms)
+  MOPED: 211.101.12.237:27017 GET_MORE     database=chezhongguo_development collection=brands limit=0 cursor_id=3948845293680731754 (363.6391ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=20 skip=0 fields=nil (178.0758ms)
+  Rendered brands/_hot.html.erb (193.9ms)
+  Rendered brands/_list.html.erb (4.7ms)
+  Rendered brands/_list.html.erb (5.9ms)
+  Rendered brands/_list.html.erb (4.4ms)
+  Rendered brands/_list.html.erb (41.8ms)
+  Rendered brands/_list.html.erb (31.3ms)
+  Rendered brands/index.html.erb within layouts/application (284.4ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered cars/_form_search.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 1637ms (Views: 290.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-07 23:18:48 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 9ms (Views: 8.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-07 23:18:48 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered cars/_form_search.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 6ms (Views: 6.1ms)
+
+
+Started GET "/car_models" for 127.0.0.1 at 2013-12-07 23:18:48 +0800
+Processing by CarModelsController#index as HTML
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} (93.0209ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=0 skip=0 fields=nil (1236.5556ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=20 skip=0 fields=nil (176.1634ms)
+  Rendered shares/_brands_selector_hot.html.erb (185.7ms)
+  Rendered shares/_brands_selector_list.html.erb (2.7ms)
+  Rendered shares/_brands_selector_list.html.erb (2.4ms)
+  Rendered shares/_brands_selector_list.html.erb (1.9ms)
+  Rendered shares/_brands_selector_list.html.erb (4.3ms)
+  Rendered shares/_brands_selector_list.html.erb (44.8ms)
+  Rendered car_models/_brands_selector.html.erb (244.1ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=car_models selector={} flags=[] limit=25 skip=0 fields=nil (71.3489ms)
+  MOPED: 211.101.12.237:27017 KILL_CURSORS cursor_ids=[3948858744736790045] (0.0732ms)
+  Rendered shares/_list.html.erb (85.0ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=chezhongguo_development command={:count=>"car_models", :query=>{}} (70.3130ms)
+  Rendered car_models/index.html.erb within layouts/application (409.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 1752ms (Views: 418.1ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2013-12-07 23:18:50 +0800
+Processing by BrandsController#index as HTML
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} (100.4374ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={} flags=[] limit=0 skip=0 fields=nil (777.4353ms)
+  MOPED: 211.101.12.237:27017 GET_MORE     database=chezhongguo_development collection=brands limit=0 cursor_id=3948859886985252458 (363.1823ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=20 skip=0 fields=nil (178.0052ms)
+  Rendered brands/_hot.html.erb (193.3ms)
+  Rendered brands/_list.html.erb (5.5ms)
+  Rendered brands/_list.html.erb (6.0ms)
+  Rendered brands/_list.html.erb (4.4ms)
+  Rendered brands/_list.html.erb (11.2ms)
+  Rendered brands/_list.html.erb (63.0ms)
+  Rendered brands/index.html.erb within layouts/application (316.7ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 1570ms (Views: 322.8ms)
+
+
+Started GET "/autoparts" for 127.0.0.1 at 2013-12-07 23:18:52 +0800
+Processing by AutopartsController#index as HTML
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} (93.0109ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=autoparts selector={} flags=[] limit=0 skip=0 fields=nil (47.4889ms)
+  Rendered autoparts/index.html.erb within layouts/application (143.5ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered cars/_form_search.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 152ms (Views: 151.6ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2013-12-07 23:18:52 +0800
+Processing by QuestionsController#index as HTML
+  Rendered questions/_nav.html.erb (1.5ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} (142.6668ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=questions selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=0 skip=0 fields=nil (54.2300ms)
+  Rendered questions/_list.html.erb (202.5ms)
+  Rendered questions/_sidebar.html.erb (0.0ms)
+  Rendered questions/_form_search.html.erb (0.4ms)
+  Rendered questions/index.html.erb within layouts/application (206.9ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 245ms (Views: 244.1ms)
+
+
+Started GET "/autoparts" for 127.0.0.1 at 2013-12-07 23:18:52 +0800
+Processing by AutopartsController#index as HTML
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} (95.9260ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=autoparts selector={} flags=[] limit=0 skip=0 fields=nil (49.1438ms)
+  Rendered autoparts/index.html.erb within layouts/application (147.4ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 156ms (Views: 155.3ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2013-12-07 23:19:03 +0800
+Processing by BrandsController#index as HTML
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={} flags=[] limit=0 skip=0 fields=nil (773.0262ms)
+  MOPED: 211.101.12.237:27017 GET_MORE     database=chezhongguo_development collection=brands limit=0 cursor_id=3948914467204365141 (369.5157ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=20 skip=0 fields=nil (177.2723ms)
+  Rendered brands/_hot.html.erb (195.4ms)
+  Rendered brands/_list.html.erb (4.9ms)
+  Rendered brands/_list.html.erb (6.1ms)
+  Rendered brands/_list.html.erb (4.7ms)
+  Rendered brands/_list.html.erb (41.9ms)
+  Rendered brands/_list.html.erb (62.1ms)
+  Rendered brands/index.html.erb within layouts/application (317.9ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 1472ms (Views: 324.0ms)
+
+
+Started GET "/images/brand/a09cde3086e4e1b23ee018230a8d3544.jpg" for 127.0.0.1 at 2013-12-07 23:19:04 +0800
+
+
+Started GET "/images/brand/4797f4fe1d7bbc5b3e3cc6c1b37ece18.jpg" for 127.0.0.1 at 2013-12-07 23:19:05 +0800
+
+
+Started GET "/images/brand/25c8ecb9fb61433849f4c99cdbf7cf41.jpg" for 127.0.0.1 at 2013-12-07 23:19:05 +0800
+
+
+Started GET "/images/brand/46d5408e319fd3cc9e95261c74ce18bb.jpg" for 127.0.0.1 at 2013-12-07 23:19:05 +0800
+
+
+Started GET "/images/brand/e697896f92da2b78e7a718582b8d2976.jpg" for 127.0.0.1 at 2013-12-07 23:19:06 +0800
+
+
+Started GET "/images/brand/622e55d240977d456ba82c14659a5dba.jpg" for 127.0.0.1 at 2013-12-07 23:19:06 +0800
+
+
+Started GET "/images/brand/958bd2b3f9c0433d47ec62448c659b49.jpg" for 127.0.0.1 at 2013-12-07 23:19:07 +0800
+
+
+Started GET "/images/brand/462860a39a494749cc576d098e6e987c.jpg" for 127.0.0.1 at 2013-12-07 23:19:07 +0800
+
+
+Started GET "/images/brand/a7a8615a918eee2f8328b0be5928ca98.jpg" for 127.0.0.1 at 2013-12-07 23:19:07 +0800
+
+
+Started GET "/images/brand/8f7072eaacf6192746eeead8660d9f01.jpg" for 127.0.0.1 at 2013-12-07 23:19:08 +0800
+
+
+Started GET "/images/brand/6cecdc5d367b226906d7c5f44167004c.jpg" for 127.0.0.1 at 2013-12-07 23:19:08 +0800
+
+
+Started GET "/images/brand/b21d0d6e946fc5bf663d2005db799b94.jpg" for 127.0.0.1 at 2013-12-07 23:19:08 +0800
+
+
+Started GET "/images/brand/a51d66433414f0c505cc68fc5eaeeb06.jpg" for 127.0.0.1 at 2013-12-07 23:19:09 +0800
+
+
+Started GET "/images/brand/a6a6be356a91cebf5881af617e0467d3.jpg" for 127.0.0.1 at 2013-12-07 23:19:09 +0800
+
+
+Started GET "/images/brand/e94582e8f3d2cad5f589d5296fb2ee82.jpg" for 127.0.0.1 at 2013-12-07 23:19:09 +0800
+
+
+Started GET "/images/brand/4239097e123715a310e7365789924c3a.jpg" for 127.0.0.1 at 2013-12-07 23:19:10 +0800
+
+
+Started GET "/assets/default.png" for 127.0.0.1 at 2013-12-07 23:19:10 +0800
+Served asset /default.png - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/default.png"):
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/images/brand/68d848b82922289ffee336a0bca2169d.jpg" for 127.0.0.1 at 2013-12-07 23:19:10 +0800
+
+
+Started GET "/images/brand/05353f8da977fa8a838e31b35b0592d3.jpg" for 127.0.0.1 at 2013-12-07 23:19:11 +0800
+
+
+Started GET "/autoparts" for 127.0.0.1 at 2013-12-07 23:19:28 +0800
+Processing by AutopartsController#index as HTML
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} (96.2837ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=autoparts selector={} flags=[] limit=0 skip=0 fields=nil (56.8926ms)
+  Rendered autoparts/index.html.erb within layouts/application (156.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 167ms (Views: 167.0ms)
