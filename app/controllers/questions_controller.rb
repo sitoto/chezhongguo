@@ -1,5 +1,5 @@
 class QuestionsController < ApplicationController
-  load_and_authorize_resource :only => [:new,:edit,:create,:update,:destroy, :my]
+  load_and_authorize_resource :only => [:new, :edit, :update, :destroy, :my]
 
   def index
     @questions = Question.all.desc(:created_at)
@@ -18,7 +18,7 @@ class QuestionsController < ApplicationController
 
   def show
     @question = Question.find(params[:id])
-    @question.inc(:views_count, 1)
+    @question.inc(views_count: 1)
     @node = @question.node
     @page_title = @question.title
 
@@ -45,7 +45,7 @@ class QuestionsController < ApplicationController
   # POST /questions
   # POST /questions.json
   def create
-    @question = Question.new(params[:question])
+    @question = Question.new(question_params)
     @question.user = current_user
 
     respond_to do |format|
@@ -65,7 +65,7 @@ class QuestionsController < ApplicationController
     @question = Question.find(params[:id])
 
     respond_to do |format|
-      if @question.update_attributes(params[:question])
+      if @question.update_attributes(question_params)
         format.html { redirect_to @question, notice: 'Question was successfully updated.' }
         format.json { head :no_content }
       else
@@ -118,6 +118,10 @@ class QuestionsController < ApplicationController
     respond_to do |format|
       format.html
     end
+  end
+
+  def question_params
+    params.require(:question).permit(:node_id, :title, :content)
   end
 
 

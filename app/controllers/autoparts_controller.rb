@@ -40,7 +40,7 @@ class AutopartsController < ApplicationController
   # POST /autoparts
   # POST /autoparts.json
   def create
-    @autopart = Autopart.new(params[:autopart])
+    @autopart = Autopart.new(autopart_params)
 
     respond_to do |format|
       if @autopart.save
@@ -59,7 +59,7 @@ class AutopartsController < ApplicationController
     @autopart = Autopart.find(params[:id])
 
     respond_to do |format|
-      if @autopart.update_attributes(params[:autopart])
+      if @autopart.update_attributes(autopart_params)
         format.html { redirect_to @autopart, notice: 'Autopart was successfully updated.' }
         format.json { head :no_content }
       else
@@ -79,5 +79,9 @@ class AutopartsController < ApplicationController
       format.html { redirect_to autoparts_url }
       format.json { head :no_content }
     end
+  end
+
+  def autopart_params
+    params.require(:autopart).permit(:name, :price, :image, :description, :remote_url)
   end
 end

@@ -29,16 +29,16 @@ Chezhongguo::Application.routes.draw do
   get "search/cars"
 
   if Rails.env.development? 
-    match "/images/*path" => "gridfs#serve"
+    get "/images/*path" => "gridfs#serve"
   end
 
   resources :cars do 
     resources :parameters
   end
 
-  authenticated :user do
-    root :to => 'home#index'
-  end
+  #authenticated :user do
+  #  root :to => 'home#index'
+  #end
 
   root :to => "home#index"
 
@@ -49,7 +49,7 @@ Chezhongguo::Application.routes.draw do
 
   resources :nodes
 
-  match "questions/node:id" => "questions#node", :as => :node_questions
+#  get "questions/node:id" => "questions#node", as: :nodequestions
 
 
 

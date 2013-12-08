@@ -15,7 +15,7 @@ class CarModel
 
 
   field :temp_model_url
-	field :temp_pic_url
+  field :temp_pic_url
 
   mount_uploader :image, CarModelPhotoUploader
 

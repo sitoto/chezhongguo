@@ -1,6 +1,6 @@
 source 'http://ruby.taobao.org'
 #gem 'rails', '3.2.6'
-gem 'rails', '4.0.2'
+gem 'rails', '4.0.1.rc3'
 
 gem 'sass-rails', "~> 4.0.0"
 gem 'coffee-rails', "~> 4.0.0"
@@ -11,18 +11,17 @@ gem "jquery-rails", "3.0.4"
 
 gem "cancan","1.6.10"
 
+
+gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'# , '4.0.0.alpha1', github: 'mongoid/mongoid'
+gem "carrierwave"
+gem 'carrierwave-mongoid'
+
+gem 'mongo'
+gem 'bson_ext'
+
 #file upload
 gem "mini_magick", "3.4"
 
-
-gem 'anjlab-bootstrap-rails', '2.0.3.2', :require => 'bootstrap-rails'
-
-gem 'mongo'
-gem 'mongoid', '4.0.0.alpha1', github: 'mongoid/mongoid'
-gem 'bson_ext'
-
-gem "carrierwave"
-gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
 
 #gem 'mongoid', :git => 'git://github.com/mongoid/mongoid.git'
 gem "rspec-rails", ">= 2.11.0", :group => [:development, :test]

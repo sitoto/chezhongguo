@@ -9,7 +9,6 @@
       
     </p> 
     <p>
-
       <%= @question.content %>
     </p>
 
@@ -19,7 +18,7 @@
     <b> 不好:</b>
     <%= @question.bad %>
     </p>
-    <% if can? :update,@question %>
+    <% if can? :update, @question %>
       <%= link_to '修改', edit_question_path(@question) %> |
     <% end %>
 

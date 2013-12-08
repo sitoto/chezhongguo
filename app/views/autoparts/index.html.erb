@@ -1,4 +1,4 @@
-<h1>Listing autoparts</h1>
+<h1>车灯型号查询</h1>
 
 <table>
   <tr>
@@ -6,10 +6,6 @@
     <th>Price</th>
     <th>Image</th>
     <th>Description</th>
-    <th>Remote url</th>
-    <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 <% @autoparts.each do |autopart| %>
@@ -18,10 +14,6 @@
     <td><%= autopart.price %></td>
     <td><%= autopart.image %></td>
     <td><%= autopart.description %></td>
-    <td><%= autopart.remote_url %></td>
-    <td><%= link_to 'Show', autopart %></td>
-    <td><%= link_to 'Edit', edit_autopart_path(autopart) %></td>
-    <td><%= link_to 'Destroy', autopart, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>

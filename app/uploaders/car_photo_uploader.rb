@@ -10,8 +10,8 @@ class CarPhotoUploader < CarrierWave::Uploader::Base
   # include Sprockets::Helpers::RailsHelper
   # include Sprockets::Helpers::IsolatedHelper
 
-  # storage :file
-   storage :grid_fs
+  storage :file
+  # storage :grid_fs
 
   def store_dir
     "#{model.class.to_s.underscore}"

@@ -2,8 +2,8 @@
 CarrierWave.configure do |config|
 #  config.grid_fs_database = Mongoid::Config.sessions[:default][:database]
 #  config.grid_fs_host = Mongoid::Config.sessions[:default][:hosts].first
-  config.storage = :grid_fs # 存储类型
-  config.grid_fs_access_url = "/images"
+  config.storage = :file #:grid_fs # 存储类型
+  #config.grid_fs_access_url = "/images"
 #  config.grid_fs_database = "photos" #Mongoid.database.name # GridFS数据库名
 #  config.grid_fs_host = "127.0.0.1" #Mongoid.config.master.connection.host # GridFS服务器地址
 

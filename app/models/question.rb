@@ -9,7 +9,6 @@ class Question
   field :bad, type: Integer,  :default => 0
   field :answers_count, type: Integer, :default => 0
   field :views_count,   type: Integer, :default => 0
-  
   field :replied_at,  type: DateTime
   field :suggested_at, type: DateTime
 
@@ -25,8 +24,8 @@ class Question
   belongs_to :user
   has_many   :answers
 
-  attr_protected :user_id
-#  attr_accessor :current_user_id
+  #field :user_id
+  #  attr_accessor :current_user_id
   validates_presence_of :user_id, :title
 
   #scopes
@@ -34,22 +33,22 @@ class Question
   scope :last_actived, desc("replied_at")
   #
   scope :fields_for_list, without(:content)
-  
+
 
   def self.find_by_title(title)
     first(:conditions => {:title => title})
   end
 
 
-before_save :store_cache_fields
+  before_save :store_cache_fields
   def store_cache_fields
     self.node_name = self.node.try(:name) || ""
   end
-  
-before_create :init_replied_at_on_create
+
+  before_create :init_replied_at_on_create
   def init_replied_at_on_create
     self.replied_at = Time.now if self.replied_at.blank?
   end
-  
+
 
 end
