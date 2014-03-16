@@ -10,21 +10,16 @@ gem "jquery-rails", "3.0.4"
 
 gem "cancan","1.6.10"
 
-
-gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'# , '4.0.0.alpha1', github: 'mongoid/mongoid'
+gem 'mongoid', '4.0.0.beta1', github: 'mongoid/mongoid'
+#gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'# , '4.0.0.alpha1', github: 'mongoid/mongoid'
 gem "carrierwave"
 gem 'carrierwave-mongoid'
-
-gem 'mongo'
-gem 'bson_ext'
-
 gem 'bootstrap-sass', '~> 3.1.1'
 
 #file upload
 gem "mini_magick", "3.4"
 
 
-#gem 'mongoid', :git => 'git://github.com/mongoid/mongoid.git'
 gem "rspec-rails", ">= 2.11.0", :group => [:development, :test]
 gem "capybara", ">= 1.1.2", :group => :test
 gem "database_cleaner", ">= 0.8.0", :group => :test
