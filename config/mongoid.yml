@@ -4,8 +4,8 @@ production:
       database: chezhongguo
       hosts:
         - localhost:27017
-  options:
-     allow_dynamic_fields: true
+    options:
+      allow_dynamic_fields: true
 
 
 development:

@@ -2,7 +2,7 @@
 class BrandsController < ApplicationController
 
   def index
-   @brands_hot = Brand.hot_brands
+   @brands_hot = Brand.desc("hot_index").limit(20)
    @brands = Brand.all
     @brands_zz = []
     @brands_dx = []

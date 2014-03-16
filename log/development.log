@@ -9164,3 +9164,5 @@ Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:41:15 +080
 
 
 Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:41:15 +0800
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 105.6535ms
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 91.8240ms

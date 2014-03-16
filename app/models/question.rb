@@ -30,9 +30,9 @@ class Question
 
   #scopes
   #
-  scope :last_actived, desc("replied_at")
+  scope :last_actived, -> { desc(:replied_at) }
   #
-  scope :fields_for_list, without(:content)
+  scope :fields_for_list, -> {  without(:content) }
 
 
   def self.find_by_title(title)

@@ -23,7 +23,6 @@ class Brand
   
 
   scope :search_name, lambda { |name| where(:name => /#{name}/) }
-  scope :hot_brands, desc("hot_index").limit(20)
   scope :serial_brands, lambda { |serial| where( :class_tag => serial )}
 
   has_many :makers, :dependent => :destroy

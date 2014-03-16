@@ -10,8 +10,10 @@ gem "jquery-rails", "3.0.4"
 
 gem "cancan","1.6.10"
 
-gem 'mongoid', '4.0.0.beta1', github: 'mongoid/mongoid'
+
+gem 'mongoid', "4.0.0.beta1"#, github: 'mongoid/mongoid'
 #gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'# , '4.0.0.alpha1', github: 'mongoid/mongoid'
+gem 'mongo'
 gem "carrierwave"
 gem 'carrierwave-mongoid'
 gem 'bootstrap-sass', '~> 3.1.1'
