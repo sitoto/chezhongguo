@@ -3,6 +3,8 @@ Chezhongguo::Application.routes.draw do
 
 
 
+  resources :articles
+
   resources :autoparts
 
   resources :car_models

@@ -1,7 +1,7 @@
 <div style="height:100px; background:#fff; margin-bottom:10px;"></div>
 <div id="cars">
   <div class="lt">
-    <%= render :partial => 'brands_selector' %>
+    <%= render :partial => 'cars/brands_selector' %>
   </div>
   <div class="rt">
     <div class="more_selector">
@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="car_list">
-      <%= render :partial => 'list', :locals => {:items => @cars} %> 
+      <%= render :partial => 'cars/list', :locals => {:items => @cars} %> 
     </div>
     <%= paginate @cars %>
   </div>

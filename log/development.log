@@ -4977,3 +4977,4190 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-08 17:17:24
 
 
 Started GET "/assets/logo.gif" for 127.0.0.1 at 2013-12-08 17:17:24 +0800
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from service at /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-16 09:47:24 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+  Rendered cars/_form_search.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_footer.html.erb (11.1ms)
+Completed 200 OK in 219ms (Views: 218.8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 09:47:25 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 09:47:25 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 09:47:25 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 09:47:25 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 09:47:25 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 09:47:25 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 09:47:25 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 09:47:25 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 09:47:25 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 09:47:25 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 09:47:25 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 09:47:25 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 09:47:25 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 09:47:25 +0800
+
+
+Started GET "/assets/lehazi.png" for 127.0.0.1 at 2014-03-16 09:47:25 +0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/lehazi.png"):
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.7ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (69.0ms)
+
+
+Started GET "/assets/nav_li.gif" for 127.0.0.1 at 2014-03-16 09:47:25 +0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/nav_li.gif"):
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (53.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-16 09:47:32 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (33.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 41ms (Views: 40.1ms)
+
+
+Started GET "/car_models" for 127.0.0.1 at 2014-03-16 09:47:33 +0800
+Processing by CarModelsController#index as HTML
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 290.9034ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1288.7640ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=20 skip=0 batch_size=nil fields=nil runtime: 175.7486ms
+  Rendered shares/_brands_selector_hot.html.erb (183.7ms)
+  Rendered shares/_brands_selector_list.html.erb (3.4ms)
+  Rendered shares/_brands_selector_list.html.erb (3.1ms)
+  Rendered shares/_brands_selector_list.html.erb (2.3ms)
+  Rendered shares/_brands_selector_list.html.erb (5.0ms)
+  Rendered shares/_brands_selector_list.html.erb (8.1ms)
+  Rendered car_models/_brands_selector.html.erb (226.5ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=car_models selector={} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 99.0068ms
+  MOPED: 211.101.12.237:27017 KILL_CURSORS cursor_ids=[6928603069438858748] runtime: 0.1272ms
+  Rendered shares/_list.html.erb (114.1ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=chezhongguo_development command={:count=>"car_models", :query=>{}} runtime: 48.3737ms
+  Rendered car_models/index.html.erb within layouts/application (922.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 2578ms (Views: 938.1ms)
+
+
+Started GET "/assets/bg_white.gif" for 127.0.0.1 at 2014-03-16 09:47:36 +0800
+
+
+Started GET "/assets/default-car.png" for 127.0.0.1 at 2014-03-16 09:47:36 +0800
+
+
+Started GET "/brands/5095d91b96a637021b000001" for 127.0.0.1 at 2014-03-16 09:47:46 +0800
+Processing by BrandsController#show as HTML
+  Parameters: {"id"=>"5095d91b96a637021b000001"}
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 54.4246ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"_id"=>BSON::ObjectId('5095d91b96a637021b000001')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 49.4125ms
+  MOPED: 211.101.12.237:27017 COMMAND      database=chezhongguo_development command={:count=>"makers", :query=>{"brand_id"=>BSON::ObjectId('5095d91b96a637021b000001')}} runtime: 71.5256ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=makers selector={"brand_id"=>BSON::ObjectId('5095d91b96a637021b000001')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 49.1051ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=car_models selector={"maker_id"=>BSON::ObjectId('5096349296a6370b1f000001')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 279.4211ms
+  Rendered brands/show.html.erb within layouts/application (456.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 576ms (Views: 469.7ms)
+
+
+Started GET "/assets/default.png" for 127.0.0.1 at 2014-03-16 09:47:47 +0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/default.png"):
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.8ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (55.6ms)
+
+
+Started GET "/brands/505d9e9996a6371f3c000056" for 127.0.0.1 at 2014-03-16 09:47:56 +0800
+Processing by BrandsController#show as HTML
+  Parameters: {"id"=>"505d9e9996a6371f3c000056"}
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"_id"=>BSON::ObjectId('505d9e9996a6371f3c000056')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 48.7260ms
+  MOPED: 211.101.12.237:27017 COMMAND      database=chezhongguo_development command={:count=>"makers", :query=>{"brand_id"=>BSON::ObjectId('505d9e9996a6371f3c000056')}} runtime: 49.0465ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=makers selector={"brand_id"=>BSON::ObjectId('505d9e9996a6371f3c000056')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 47.9479ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=car_models selector={"maker_id"=>BSON::ObjectId('5096336696a637dd1e000013')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 53.6723ms
+  Rendered brands/show.html.erb within layouts/application (156.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 219ms (Views: 168.4ms)
+
+
+Started GET "/assets/default.png" for 127.0.0.1 at 2014-03-16 09:47:56 +0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/default.png"):
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.9ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (65.5ms)
+
+
+Started GET "/brands/505d9e7296a6371f3c00000a" for 127.0.0.1 at 2014-03-16 09:48:22 +0800
+Processing by BrandsController#show as HTML
+  Parameters: {"id"=>"505d9e7296a6371f3c00000a"}
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"_id"=>BSON::ObjectId('505d9e7296a6371f3c00000a')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 49.9194ms
+  MOPED: 211.101.12.237:27017 COMMAND      database=chezhongguo_development command={:count=>"makers", :query=>{"brand_id"=>BSON::ObjectId('505d9e7296a6371f3c00000a')}} runtime: 47.0758ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=makers selector={"brand_id"=>BSON::ObjectId('505d9e7296a6371f3c00000a')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 59.1688ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=car_models selector={"maker_id"=>BSON::ObjectId('5096344b96a637021f000007')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 50.4293ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=car_models selector={"maker_id"=>BSON::ObjectId('5096344b96a637021f000008')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 50.5237ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=car_models selector={"maker_id"=>BSON::ObjectId('5096344c96a637021f000009')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 56.7477ms
+  Rendered brands/show.html.erb within layouts/application (271.2ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered cars/_form_search.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 330ms (Views: 279.1ms)
+
+
+Started GET "/assets/default.png" for 127.0.0.1 at 2014-03-16 09:48:23 +0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/default.png"):
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.2ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (53.8ms)
+
+
+Started GET "/car_models" for 127.0.0.1 at 2014-03-16 09:50:54 +0800
+Processing by CarModelsController#index as HTML
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 47.9733ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1651.5246ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=20 skip=0 batch_size=nil fields=nil runtime: 197.4854ms
+  Rendered shares/_brands_selector_hot.html.erb (203.8ms)
+  Rendered shares/_brands_selector_list.html.erb (2.5ms)
+  Rendered shares/_brands_selector_list.html.erb (2.9ms)
+  Rendered shares/_brands_selector_list.html.erb (2.5ms)
+  Rendered shares/_brands_selector_list.html.erb (4.1ms)
+  Rendered shares/_brands_selector_list.html.erb (8.0ms)
+  Rendered car_models/_brands_selector.html.erb (228.0ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=car_models selector={} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 71.6983ms
+  MOPED: 211.101.12.237:27017 KILL_CURSORS cursor_ids=[6929437795359334022] runtime: 0.1163ms
+  Rendered shares/_list.html.erb (86.7ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=chezhongguo_development command={:count=>"car_models", :query=>{}} runtime: 48.2630ms
+  Rendered car_models/index.html.erb within layouts/application (374.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 2089ms (Views: 383.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-16 09:50:58 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 8ms (Views: 7.4ms)
+
+
+Started GET "/search/cars?q=" for 127.0.0.1 at 2014-03-16 09:51:03 +0800
+Processing by SearchController#cars as HTML
+  Parameters: {"q"=>""}
+  Rendered cars/index.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 53ms
+
+ActionView::Template::Error (Missing partial search/brands_selector, application/brands_selector with {:locale=>[:"zh-CN"], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :coffee]}. Searched in:
+  * "/home/hw/sites/chezhongguo/app/views"
+  * "/home/hw/.rvm/gems/ruby-2.0.0-p247/gems/kaminari-0.14.1/app/views"
+  * "/home/hw/.rvm/gems/ruby-2.0.0-p247/gems/devise-3.0.1/app/views"
+):
+    1: <div style="height:100px; background:#fff; margin-bottom:10px;"></div>
+    2: <div id="cars">
+    3:   <div class="lt">
+    4:     <%= render :partial => 'brands_selector' %>
+    5:   </div>
+    6:   <div class="rt">
+    7:     <div class="more_selector">
+  app/views/cars/index.html.erb:4:in `_app_views_cars_index_html_erb__2727333360839986129_45753540'
+  app/controllers/search_controller.rb:9:in `cars'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.9ms)
+
+
+Started GET "/search/cars?q=q" for 127.0.0.1 at 2014-03-16 09:51:10 +0800
+Processing by SearchController#cars as HTML
+  Parameters: {"q"=>"q"}
+  Rendered cars/index.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (Missing partial search/brands_selector, application/brands_selector with {:locale=>[:"zh-CN"], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :coffee]}. Searched in:
+  * "/home/hw/sites/chezhongguo/app/views"
+  * "/home/hw/.rvm/gems/ruby-2.0.0-p247/gems/kaminari-0.14.1/app/views"
+  * "/home/hw/.rvm/gems/ruby-2.0.0-p247/gems/devise-3.0.1/app/views"
+):
+    1: <div style="height:100px; background:#fff; margin-bottom:10px;"></div>
+    2: <div id="cars">
+    3:   <div class="lt">
+    4:     <%= render :partial => 'brands_selector' %>
+    5:   </div>
+    6:   <div class="rt">
+    7:     <div class="more_selector">
+  app/views/cars/index.html.erb:4:in `_app_views_cars_index_html_erb__2727333360839986129_45753540'
+  app/controllers/search_controller.rb:9:in `cars'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.6ms)
+
+
+Started GET "/search/cars?q=q" for 127.0.0.1 at 2014-03-16 09:53:56 +0800
+Processing by SearchController#cars as HTML
+  Parameters: {"q"=>"q"}
+  Rendered cars/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (Missing partial search/brands_selector, application/brands_selector with {:locale=>[:"zh-CN"], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :coffee]}. Searched in:
+  * "/home/hw/sites/chezhongguo/app/views"
+  * "/home/hw/.rvm/gems/ruby-2.0.0-p247/gems/kaminari-0.14.1/app/views"
+  * "/home/hw/.rvm/gems/ruby-2.0.0-p247/gems/devise-3.0.1/app/views"
+):
+    1: <div style="height:100px; background:#fff; margin-bottom:10px;"></div>
+    2: <div id="cars">
+    3:   <div class="lt">
+    4:     <%= render :partial => 'brands_selector' %>
+    5:   </div>
+    6:   <div class="rt">
+    7:     <div class="more_selector">
+  app/views/cars/index.html.erb:4:in `_app_views_cars_index_html_erb__2727333360839986129_45753540'
+  app/controllers/search_controller.rb:9:in `cars'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.3ms)
+
+
+Started GET "/search/cars?q=q" for 127.0.0.1 at 2014-03-16 09:53:57 +0800
+Processing by SearchController#cars as HTML
+  Parameters: {"q"=>"q"}
+  Rendered cars/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (Missing partial search/brands_selector, application/brands_selector with {:locale=>[:"zh-CN"], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :coffee]}. Searched in:
+  * "/home/hw/sites/chezhongguo/app/views"
+  * "/home/hw/.rvm/gems/ruby-2.0.0-p247/gems/kaminari-0.14.1/app/views"
+  * "/home/hw/.rvm/gems/ruby-2.0.0-p247/gems/devise-3.0.1/app/views"
+):
+    1: <div style="height:100px; background:#fff; margin-bottom:10px;"></div>
+    2: <div id="cars">
+    3:   <div class="lt">
+    4:     <%= render :partial => 'brands_selector' %>
+    5:   </div>
+    6:   <div class="rt">
+    7:     <div class="more_selector">
+  app/views/cars/index.html.erb:4:in `_app_views_cars_index_html_erb__2727333360839986129_45753540'
+  app/controllers/search_controller.rb:9:in `cars'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (47.3ms)
+
+
+Started GET "/search/cars?q=q" for 127.0.0.1 at 2014-03-16 09:54:16 +0800
+Processing by SearchController#cars as HTML
+  Parameters: {"q"=>"q"}
+  Rendered cars/_brands_selector.html.erb (4.0ms)
+  Rendered cars/index.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 74ms
+
+ActionView::Template::Error (Missing partial search/brands_selector_hot, application/brands_selector_hot with {:locale=>[:"zh-CN"], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :coffee]}. Searched in:
+  * "/home/hw/sites/chezhongguo/app/views"
+  * "/home/hw/.rvm/gems/ruby-2.0.0-p247/gems/kaminari-0.14.1/app/views"
+  * "/home/hw/.rvm/gems/ruby-2.0.0-p247/gems/devise-3.0.1/app/views"
+):
+    1: <%= render :partial => 'brands_selector_hot', :locals => { :title => '热门品牌', :items => @brands_hot } %>
+    2: <%= render :partial => 'brands_selector_list', :locals => { :title => '德系品牌', :items => @brands_dx } %>
+    3: <%= render :partial => 'brands_selector_list', :locals => { :title => '日韩品牌', :items => @brands_rh } %>
+    4: <%= render :partial => 'brands_selector_list', :locals => { :title => '美系品牌', :items => @brands_mx } %>
+  app/views/cars/_brands_selector.html.erb:1:in `_app_views_cars__brands_selector_html_erb__226243385849090476_27301040'
+  app/views/cars/index.html.erb:4:in `_app_views_cars_index_html_erb__2727333360839986129_27185200'
+  app/controllers/search_controller.rb:9:in `cars'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.2ms)
+
+
+Started GET "/car_models" for 127.0.0.1 at 2014-03-16 09:54:58 +0800
+Processing by CarModelsController#index as HTML
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 64402.2072ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1106.4355ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=20 skip=0 batch_size=nil fields=nil runtime: 191.6004ms
+  Rendered shares/_brands_selector_hot.html.erb (198.9ms)
+  Rendered shares/_brands_selector_list.html.erb (1.2ms)
+  Rendered shares/_brands_selector_list.html.erb (1.4ms)
+  Rendered shares/_brands_selector_list.html.erb (1.4ms)
+  Rendered shares/_brands_selector_list.html.erb (2.8ms)
+  Rendered shares/_brands_selector_list.html.erb (7.6ms)
+  Rendered car_models/_brands_selector.html.erb (216.5ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=car_models selector={} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 74.7620ms
+  MOPED: 211.101.12.237:27017 KILL_CURSORS cursor_ids=[6930709063527306201] runtime: 0.1293ms
+  Rendered shares/_list.html.erb (85.9ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=chezhongguo_development command={:count=>"car_models", :query=>{}} runtime: 48.0068ms
+  Rendered car_models/index.html.erb within layouts/application (406.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 65972ms (Views: 418.6ms)
+
+
+Started GET "/car_models" for 127.0.0.1 at 2014-03-16 09:56:04 +0800
+Processing by CarModelsController#index as HTML
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1056.1297ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=20 skip=0 batch_size=nil fields=nil runtime: 185.4168ms
+  Rendered shares/_brands_selector_hot.html.erb (191.6ms)
+  Rendered shares/_brands_selector_list.html.erb (2.4ms)
+  Rendered shares/_brands_selector_list.html.erb (2.5ms)
+  Rendered shares/_brands_selector_list.html.erb (1.2ms)
+  Rendered shares/_brands_selector_list.html.erb (3.9ms)
+  Rendered shares/_brands_selector_list.html.erb (7.8ms)
+  Rendered car_models/_brands_selector.html.erb (212.9ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=car_models selector={} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 71.6295ms
+  MOPED: 211.101.12.237:27017 KILL_CURSORS cursor_ids=[6930715205130625788] runtime: 0.1213ms
+  Rendered shares/_list.html.erb (84.6ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=chezhongguo_development command={:count=>"car_models", :query=>{}} runtime: 47.8753ms
+  Rendered car_models/index.html.erb within layouts/application (357.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 1431ms (Views: 370.4ms)
+
+
+Started GET "/assets/bg_white.gif" for 127.0.0.1 at 2014-03-16 09:56:06 +0800
+
+
+Started GET "/assets/default-car.png" for 127.0.0.1 at 2014-03-16 09:56:06 +0800
+
+
+Started GET "/car_models/509672fc96a637362100001e" for 127.0.0.1 at 2014-03-16 09:56:32 +0800
+Processing by CarModelsController#show as HTML
+  Parameters: {"id"=>"509672fc96a637362100001e"}
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 48.3861ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=car_models selector={"_id"=>BSON::ObjectId('509672fc96a637362100001e')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 48.7067ms
+  Rendered car_models/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered cars/_form_search.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 107ms (Views: 8.4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 09:56:32 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 09:56:32 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 09:56:32 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 09:56:32 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 09:56:32 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 09:56:32 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 09:56:32 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 09:56:32 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 09:56:32 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 09:56:32 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 09:56:32 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 09:56:32 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 09:56:32 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 09:56:32 +0800
+
+
+Started GET "/assets/lehazi.png" for 127.0.0.1 at 2014-03-16 09:56:32 +0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/lehazi.png"):
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.7ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (111.8ms)
+
+
+Started GET "/assets/nav_li.gif" for 127.0.0.1 at 2014-03-16 09:56:32 +0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/nav_li.gif"):
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.4ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (55.8ms)
+
+
+Started GET "/car_models/509674fd96a6374e210000f4" for 127.0.0.1 at 2014-03-16 09:56:49 +0800
+Processing by CarModelsController#show as HTML
+  Parameters: {"id"=>"509674fd96a6374e210000f4"}
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 47.0500ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=car_models selector={"_id"=>BSON::ObjectId('509674fd96a6374e210000f4')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 47.1773ms
+  Rendered car_models/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 109ms (Views: 12.4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 09:56:50 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 09:56:50 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 09:56:50 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 09:56:50 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 09:56:50 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 09:56:50 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 09:56:50 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 09:56:50 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 09:56:50 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 09:56:50 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 09:56:50 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 09:56:50 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 09:56:50 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 09:56:50 +0800
+
+
+Started GET "/assets/lehazi.png" for 127.0.0.1 at 2014-03-16 09:56:50 +0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/lehazi.png"):
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (45.7ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (101.5ms)
+
+
+Started GET "/assets/nav_li.gif" for 127.0.0.1 at 2014-03-16 09:56:50 +0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/nav_li.gif"):
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.3ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (55.8ms)
+
+
+Started GET "/car_models/5096750196a6374e21000109" for 127.0.0.1 at 2014-03-16 09:57:00 +0800
+Processing by CarModelsController#show as HTML
+  Parameters: {"id"=>"5096750196a6374e21000109"}
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=car_models selector={"_id"=>BSON::ObjectId('5096750196a6374e21000109')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 46.2363ms
+  Rendered car_models/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 59ms (Views: 11.9ms)
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 09:57:00 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 09:57:00 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 09:57:00 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 09:57:00 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 09:57:00 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 09:57:00 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 09:57:00 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 09:57:01 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 09:57:01 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 09:57:01 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 09:57:01 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 09:57:01 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 09:57:01 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 09:57:01 +0800
+
+
+Started GET "/assets/lehazi.png" for 127.0.0.1 at 2014-03-16 09:57:01 +0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/lehazi.png"):
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (49.8ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.2ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (110.5ms)
+
+
+Started GET "/assets/nav_li.gif" for 127.0.0.1 at 2014-03-16 09:57:01 +0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/nav_li.gif"):
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.4ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (56.5ms)
+
+
+Started GET "/car_models/5096750196a6374e21000109/edit" for 127.0.0.1 at 2014-03-16 09:57:10 +0800
+
+AbstractController::ActionNotFound (The action 'edit' could not be found for CarModelsController):
+  actionpack (4.0.1.rc3) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.1.rc3) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1.rc3) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1.rc3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1.rc3) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1.rc3) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1.rc3) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.1.rc3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/callbacks.rb:373:in `_run__3502437054610233133__call__callbacks'
+  activesupport (4.0.1.rc3) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started GET "/brands/505d9ea896a6371f3c000074" for 127.0.0.1 at 2014-03-16 09:57:18 +0800
+Processing by BrandsController#show as HTML
+  Parameters: {"id"=>"505d9ea896a6371f3c000074"}
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 46.2926ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"_id"=>BSON::ObjectId('505d9ea896a6371f3c000074')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 54.1969ms
+  MOPED: 211.101.12.237:27017 COMMAND      database=chezhongguo_development command={:count=>"makers", :query=>{"brand_id"=>BSON::ObjectId('505d9ea896a6371f3c000074')}} runtime: 47.9121ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=makers selector={"brand_id"=>BSON::ObjectId('505d9ea896a6371f3c000074')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 47.1953ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=car_models selector={"maker_id"=>BSON::ObjectId('5096344896a637021f000002')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 48.5066ms
+  Rendered brands/show.html.erb within layouts/application (177.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 294ms (Views: 191.0ms)
+
+
+Started GET "/assets/default.png" for 127.0.0.1 at 2014-03-16 09:57:19 +0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/default.png"):
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.9ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (56.7ms)
+
+
+Started GET "/car_models" for 127.0.0.1 at 2014-03-16 09:57:29 +0800
+Processing by CarModelsController#index as HTML
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1077.5952ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=20 skip=0 batch_size=nil fields=nil runtime: 174.5550ms
+  Rendered shares/_brands_selector_hot.html.erb (177.8ms)
+  Rendered shares/_brands_selector_list.html.erb (1.2ms)
+  Rendered shares/_brands_selector_list.html.erb (1.6ms)
+  Rendered shares/_brands_selector_list.html.erb (1.2ms)
+  Rendered shares/_brands_selector_list.html.erb (2.7ms)
+  Rendered shares/_brands_selector_list.html.erb (13.4ms)
+  Rendered car_models/_brands_selector.html.erb (200.9ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=car_models selector={} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 71.6940ms
+  MOPED: 211.101.12.237:27017 KILL_CURSORS cursor_ids=[6931069411008896450] runtime: 0.1267ms
+  Rendered shares/_list.html.erb (84.0ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=chezhongguo_development command={:count=>"car_models", :query=>{}} runtime: 48.4047ms
+  Rendered car_models/index.html.erb within layouts/application (343.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 1435ms (Views: 352.4ms)
+
+
+Started GET "/assets/default-car.png" for 127.0.0.1 at 2014-03-16 09:57:31 +0800
+
+
+Started GET "/search/cars?q=1" for 127.0.0.1 at 2014-03-16 10:01:28 +0800
+Processing by SearchController#cars as HTML
+  Parameters: {"q"=>"1"}
+  Rendered cars/_brands_selector.html.erb (1.4ms)
+  Rendered cars/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (Missing partial search/brands_selector_hot, application/brands_selector_hot with {:locale=>[:"zh-CN"], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :coffee]}. Searched in:
+  * "/home/hw/sites/chezhongguo/app/views"
+  * "/home/hw/.rvm/gems/ruby-2.0.0-p247/gems/kaminari-0.14.1/app/views"
+  * "/home/hw/.rvm/gems/ruby-2.0.0-p247/gems/devise-3.0.1/app/views"
+):
+    1: <%= render :partial => 'brands_selector_hot', :locals => { :title => '热门品牌', :items => @brands_hot } %>
+    2: <%= render :partial => 'brands_selector_list', :locals => { :title => '德系品牌', :items => @brands_dx } %>
+    3: <%= render :partial => 'brands_selector_list', :locals => { :title => '日韩品牌', :items => @brands_rh } %>
+    4: <%= render :partial => 'brands_selector_list', :locals => { :title => '美系品牌', :items => @brands_mx } %>
+  app/views/cars/_brands_selector.html.erb:1:in `_app_views_cars__brands_selector_html_erb__226243385849090476_27301040'
+  app/views/cars/index.html.erb:4:in `_app_views_cars_index_html_erb__2727333360839986129_27185200'
+  app/controllers/search_controller.rb:9:in `cars'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (47.6ms)
+
+
+Started GET "/search/cars?q=1" for 127.0.0.1 at 2014-03-16 10:02:18 +0800
+Processing by SearchController#cars as HTML
+  Parameters: {"q"=>"1"}
+  Rendered cars/_brands_selector_hot.html.erb (1.8ms)
+  Rendered cars/_brands_selector.html.erb (21.8ms)
+  Rendered cars/index.html.erb within layouts/application (22.4ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2:   <div class="title_bar"><h3 class="title" style="color:Red;"><%= title %></h3></div>
+    3:   <div class="list">
+    4:     <ul>
+    5:       <% items.each do |brand| %>
+    6:         <li>
+    7:         <%= link_to brand.name, brand, :class => 'name' %>
+    8:         </li>
+  app/views/cars/_brands_selector_hot.html.erb:5:in `_app_views_cars__brands_selector_hot_html_erb__3424170503999887853_43261820'
+  app/views/cars/_brands_selector.html.erb:1:in `_app_views_cars__brands_selector_html_erb__226243385849090476_42264460'
+  app/views/cars/index.html.erb:4:in `_app_views_cars_index_html_erb__2727333360839986129_27185200'
+  app/controllers/search_controller.rb:9:in `cars'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.2ms)
+
+
+Started GET "/search/cars?q=1" for 127.0.0.1 at 2014-03-16 10:02:20 +0800
+Processing by SearchController#cars as HTML
+  Parameters: {"q"=>"1"}
+  Rendered cars/_brands_selector_hot.html.erb (0.5ms)
+  Rendered cars/_brands_selector.html.erb (1.0ms)
+  Rendered cars/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2:   <div class="title_bar"><h3 class="title" style="color:Red;"><%= title %></h3></div>
+    3:   <div class="list">
+    4:     <ul>
+    5:       <% items.each do |brand| %>
+    6:         <li>
+    7:         <%= link_to brand.name, brand, :class => 'name' %>
+    8:         </li>
+  app/views/cars/_brands_selector_hot.html.erb:5:in `_app_views_cars__brands_selector_hot_html_erb__3424170503999887853_43261820'
+  app/views/cars/_brands_selector.html.erb:1:in `_app_views_cars__brands_selector_html_erb__226243385849090476_42264460'
+  app/views/cars/index.html.erb:4:in `_app_views_cars_index_html_erb__2727333360839986129_27185200'
+  app/controllers/search_controller.rb:9:in `cars'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.4ms)
+
+
+Started GET "/search/cars?q=1" for 127.0.0.1 at 2014-03-16 10:03:26 +0800
+Processing by SearchController#cars as HTML
+  Parameters: {"q"=>"1"}
+  Rendered cars/_brands_selector_hot.html.erb (0.5ms)
+  Rendered cars/_brands_selector_list.html.erb (0.9ms)
+  Rendered cars/_brands_selector.html.erb (2.6ms)
+  Rendered cars/index.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2:   <div class="title_bar"><h3 class="title"><%= title %></h3></div>
+    3:   <div class="list">
+    4:     <ul>
+    5:       <% items.each do |brand| %>
+    6:         <li>
+    7:         <%= link_to brand.name, brand, :class => 'name' %>
+    8:         </li>
+  app/views/cars/_brands_selector_list.html.erb:5:in `_app_views_cars__brands_selector_list_html_erb___1406678025996419706_70256909487800'
+  app/views/cars/_brands_selector.html.erb:2:in `_app_views_cars__brands_selector_html_erb__226243385849090476_42264460'
+  app/views/cars/index.html.erb:4:in `_app_views_cars_index_html_erb__2727333360839986129_27185200'
+  app/controllers/search_controller.rb:9:in `cars'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.1ms)
+
+
+Started GET "/search/cars?q=1" for 127.0.0.1 at 2014-03-16 10:03:56 +0800
+Processing by SearchController#cars as HTML
+  Parameters: {"q"=>"1"}
+  Rendered cars/_brands_selector_hot.html.erb (0.1ms)
+  Rendered cars/_brands_selector_list.html.erb (0.8ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector.html.erb (3.8ms)
+  Rendered cars/index.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (Missing partial search/list, application/list with {:locale=>[:"zh-CN"], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :coffee]}. Searched in:
+  * "/home/hw/sites/chezhongguo/app/views"
+  * "/home/hw/.rvm/gems/ruby-2.0.0-p247/gems/kaminari-0.14.1/app/views"
+  * "/home/hw/.rvm/gems/ruby-2.0.0-p247/gems/devise-3.0.1/app/views"
+):
+    19:       </div>
+    20:     </div>
+    21:     <div class="car_list">
+    22:       <%= render :partial => 'list', :locals => {:items => @cars} %> 
+    23:     </div>
+    24:     <%= paginate @cars %>
+    25:   </div>
+  app/views/cars/index.html.erb:22:in `_app_views_cars_index_html_erb__2727333360839986129_27185200'
+  app/controllers/search_controller.rb:9:in `cars'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.4ms)
+
+
+Started GET "/search/cars?q=1" for 127.0.0.1 at 2014-03-16 10:04:32 +0800
+Processing by SearchController#cars as HTML
+  Parameters: {"q"=>"1"}
+  Rendered cars/_brands_selector_hot.html.erb (0.1ms)
+  Rendered cars/_brands_selector_list.html.erb (0.1ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector_list.html.erb (0.1ms)
+  Rendered cars/_brands_selector_list.html.erb (0.1ms)
+  Rendered cars/_brands_selector_list.html.erb (0.1ms)
+  Rendered cars/_brands_selector.html.erb (4.0ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 47.4984ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=cars selector={"name"=>/1/} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 629.1720ms
+  MOPED: 211.101.12.237:27017 GET_MORE     database=chezhongguo_development collection=cars limit=0 cursor_id=6932815616891461069 runtime: 19473.3149ms
+  MOPED: 211.101.12.237:27017 GET_MORE     database=chezhongguo_development collection=cars limit=0 cursor_id=6932815616891461069 runtime: 4433.0098ms
+  Rendered cars/_list.html.erb (28690.8ms)
+  Rendered cars/index.html.erb within layouts/application (28704.0ms)
+Completed 500 Internal Server Error in 28706ms
+
+ActionView::Template::Error (undefined method `current_page' for #<Mongoid::Criteria:0x007fcbcc8da398>):
+    21:     <div class="car_list">
+    22:       <%= render :partial => 'cars/list', :locals => {:items => @cars} %> 
+    23:     </div>
+    24:     <%= paginate @cars %>
+    25:   </div>
+    26: </div>
+    27: 
+  app/views/cars/index.html.erb:24:in `_app_views_cars_index_html_erb__2727333360839986129_70256643457400'
+  app/controllers/search_controller.rb:9:in `cars'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.6ms)
+
+
+Started GET "/search/cars?q=1" for 127.0.0.1 at 2014-03-16 10:07:20 +0800
+Processing by SearchController#cars as HTML
+  Parameters: {"q"=>"1"}
+  Rendered cars/_brands_selector_hot.html.erb (0.1ms)
+  Rendered cars/_brands_selector_list.html.erb (0.1ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector.html.erb (2.6ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 46.8839ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=cars selector={"name"=>/1/} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 113.0373ms
+  MOPED: 211.101.12.237:27017 KILL_CURSORS cursor_ids=[6933519519082426903] runtime: 0.1904ms
+  Rendered cars/_list.html.erb (177.9ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=chezhongguo_development command={:count=>"cars", :query=>{"name"=>/1/}} runtime: 59.6769ms
+  Rendered cars/index.html.erb within layouts/application (302.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 341ms (Views: 316.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:07:20 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:07:20 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:07:20 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:07:20 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:07:20 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:07:20 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:07:20 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:07:20 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:07:20 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:07:20 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:07:20 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:07:20 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 10:07:20 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:07:20 +0800
+
+
+Started GET "/car/thumb_19ccb22cc9763533c1ad9d052b05358f.jpg" for 127.0.0.1 at 2014-03-16 10:07:20 +0800
+
+ActionController::RoutingError (No route matches [GET] "/car/thumb_19ccb22cc9763533c1ad9d052b05358f.jpg"):
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.3ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (59.7ms)
+
+
+Started GET "/car/thumb_5f5d1a640cfc8020940f67ef287cee6b.jpg" for 127.0.0.1 at 2014-03-16 10:07:20 +0800
+
+ActionController::RoutingError (No route matches [GET] "/car/thumb_5f5d1a640cfc8020940f67ef287cee6b.jpg"):
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (13.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (61.9ms)
+
+
+Started GET "/assets/default-car.png" for 127.0.0.1 at 2014-03-16 10:07:21 +0800
+
+
+Started GET "/assets/lehazi.png" for 127.0.0.1 at 2014-03-16 10:07:21 +0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/lehazi.png"):
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (58.3ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (104.1ms)
+
+
+Started GET "/assets/nav_li.gif" for 127.0.0.1 at 2014-03-16 10:07:21 +0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/nav_li.gif"):
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (51.9ms)
+
+
+Started GET "/assets/bg_white.gif" for 127.0.0.1 at 2014-03-16 10:07:21 +0800
+
+
+Started GET "/search/cars?q=1" for 127.0.0.1 at 2014-03-16 10:21:32 +0800
+Processing by SearchController#cars as HTML
+  Parameters: {"q"=>"1"}
+  Rendered cars/_brands_selector_hot.html.erb (0.1ms)
+  Rendered cars/_brands_selector_list.html.erb (0.1ms)
+  Rendered cars/_brands_selector_list.html.erb (0.1ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector_list.html.erb (0.1ms)
+  Rendered cars/_brands_selector_list.html.erb (0.1ms)
+  Rendered cars/_brands_selector.html.erb (5.4ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 46.2116ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=cars selector={"name"=>/1/} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 114.8304ms
+  MOPED: 211.101.12.237:27017 KILL_CURSORS cursor_ids=[6937083138605696298] runtime: 0.1745ms
+  Rendered cars/_list.html.erb (180.5ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=chezhongguo_development command={:count=>"cars", :query=>{"name"=>/1/}} runtime: 59.9158ms
+  Rendered cars/index.html.erb within layouts/application (259.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 1264ms (Views: 1263.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:21:34 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:21:34 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:21:34 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:21:34 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:21:34 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:21:34 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:21:34 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:21:34 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:21:34 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:21:34 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:21:34 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:21:34 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 10:21:34 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:21:34 +0800
+
+
+Started GET "/car/thumb_19ccb22cc9763533c1ad9d052b05358f.jpg" for 127.0.0.1 at 2014-03-16 10:21:34 +0800
+
+ActionController::RoutingError (No route matches [GET] "/car/thumb_19ccb22cc9763533c1ad9d052b05358f.jpg"):
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (13.6ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (86.0ms)
+
+
+Started GET "/car/thumb_5f5d1a640cfc8020940f67ef287cee6b.jpg" for 127.0.0.1 at 2014-03-16 10:21:34 +0800
+
+ActionController::RoutingError (No route matches [GET] "/car/thumb_5f5d1a640cfc8020940f67ef287cee6b.jpg"):
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.6ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (66.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (136.8ms)
+
+
+Started GET "/assets/default-car.png" for 127.0.0.1 at 2014-03-16 10:21:34 +0800
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2014-03-16 10:21:34 +0800
+
+
+Started GET "/search/cars?page=2&q=1" for 127.0.0.1 at 2014-03-16 10:21:41 +0800
+Processing by SearchController#cars as HTML
+  Parameters: {"page"=>"2", "q"=>"1"}
+  Rendered cars/_brands_selector_hot.html.erb (0.1ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector.html.erb (2.6ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=cars selector={"name"=>/1/} flags=[] limit=25 skip=25 batch_size=nil fields=nil runtime: 105.4445ms
+  MOPED: 211.101.12.237:27017 KILL_CURSORS cursor_ids=[6937119731451823946] runtime: 0.1247ms
+  Rendered cars/_list.html.erb (118.0ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=chezhongguo_development command={:count=>"cars", :query=>{"name"=>/1/}} runtime: 62.0423ms
+  Rendered cars/index.html.erb within layouts/application (214.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 224ms (Views: 223.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:21:42 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:21:42 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:21:42 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:21:42 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:21:42 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:21:42 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:21:42 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:21:42 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:21:42 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:21:42 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:21:42 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:21:42 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:21:42 +0800
+
+
+Started GET "/assets/default-car.png" for 127.0.0.1 at 2014-03-16 10:21:42 +0800
+
+
+Started GET "/search/cars?q=%E9%9B%AA%E9%93%81%E9%BE%99" for 127.0.0.1 at 2014-03-16 10:21:53 +0800
+Processing by SearchController#cars as HTML
+  Parameters: {"q"=>"雪铁龙"}
+  Rendered cars/_brands_selector_hot.html.erb (0.1ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector.html.erb (2.3ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 46.5484ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=cars selector={"name"=>/雪铁龙/} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 125.0192ms
+  MOPED: 211.101.12.237:27017 KILL_CURSORS cursor_ids=[6937166718428845847] runtime: 0.1787ms
+  Rendered cars/_list.html.erb (187.9ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=chezhongguo_development command={:count=>"cars", :query=>{"name"=>/雪铁龙/}} runtime: 61.2095ms
+  Rendered cars/index.html.erb within layouts/application (260.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 275ms (Views: 273.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:21:53 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:21:53 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:21:53 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:21:53 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:21:53 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:21:53 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:21:53 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:21:53 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:21:53 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:21:53 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:21:53 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:21:53 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:21:53 +0800
+
+
+Started GET "/assets/default-car.png" for 127.0.0.1 at 2014-03-16 10:21:53 +0800
+
+
+Started GET "/search/cars?q=%E9%9B%AA%E9%93%81%E9%BE%99" for 127.0.0.1 at 2014-03-16 10:22:02 +0800
+Processing by SearchController#cars as HTML
+  Parameters: {"q"=>"雪铁龙"}
+  Rendered cars/_brands_selector_hot.html.erb (0.1ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector_list.html.erb (0.0ms)
+  Rendered cars/_brands_selector.html.erb (2.2ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=cars selector={"name"=>/雪铁龙/} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 112.0617ms
+  MOPED: 211.101.12.237:27017 KILL_CURSORS cursor_ids=[6937206318661970280] runtime: 0.1822ms
+  Rendered cars/_list.html.erb (128.2ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=chezhongguo_development command={:count=>"cars", :query=>{"name"=>/雪铁龙/}} runtime: 61.0416ms
+  Rendered cars/index.html.erb within layouts/application (202.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 213ms (Views: 212.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:22:03 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:22:03 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:22:03 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:22:03 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:22:03 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:22:03 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:22:03 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:22:03 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:22:03 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:22:03 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:22:03 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:22:03 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:22:03 +0800
+
+
+Started GET "/assets/default-car.png" for 127.0.0.1 at 2014-03-16 10:22:03 +0800
+
+
+Started GET "/search/cars?page=2&q=%E9%9B%AA%E9%93%81%E9%BE%99" for 127.0.0.1 at 2014-03-16 10:22:58 +0800
+Processing by SearchController#cars as HTML
+  Parameters: {"page"=>"2", "q"=>"雪铁龙"}
+  Rendered cars/_brands_selector_hot.html.erb (0.1ms)
+  Rendered cars/_brands_selector_list.html.erb (0.1ms)
+  Rendered cars/_brands_selector_list.html.erb (0.1ms)
+  Rendered cars/_brands_selector_list.html.erb (0.1ms)
+  Rendered cars/_brands_selector_list.html.erb (0.1ms)
+  Rendered cars/_brands_selector_list.html.erb (0.1ms)
+  Rendered cars/_brands_selector.html.erb (5.0ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 47.1178ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=cars selector={"name"=>/雪铁龙/} flags=[] limit=25 skip=25 batch_size=nil fields=nil runtime: 144.6027ms
+  MOPED: 211.101.12.237:27017 KILL_CURSORS cursor_ids=[6937437817302837173] runtime: 0.1264ms
+  Rendered cars/_list.html.erb (207.2ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=chezhongguo_development command={:count=>"cars", :query=>{"name"=>/雪铁龙/}} runtime: 60.6528ms
+  Rendered cars/index.html.erb within layouts/application (288.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 302ms (Views: 300.7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:22:58 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:22:58 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:22:58 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:22:58 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:22:58 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:22:58 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:22:58 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:22:58 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:22:58 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:22:58 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:22:58 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:22:58 +0800
+
+
+Started GET "/assets/default-car.png" for 127.0.0.1 at 2014-03-16 10:22:58 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:22:58 +0800
+
+
+Started GET "/car_models" for 127.0.0.1 at 2014-03-16 10:23:06 +0800
+Processing by CarModelsController#index as HTML
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 46.8440ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1095.9376ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=20 skip=0 batch_size=nil fields=nil runtime: 174.8297ms
+  Rendered shares/_brands_selector_hot.html.erb (178.6ms)
+  Rendered shares/_brands_selector_list.html.erb (1.2ms)
+  Rendered shares/_brands_selector_list.html.erb (2.4ms)
+  Rendered shares/_brands_selector_list.html.erb (1.3ms)
+  Rendered shares/_brands_selector_list.html.erb (2.6ms)
+  Rendered shares/_brands_selector_list.html.erb (9.0ms)
+  Rendered car_models/_brands_selector.html.erb (197.9ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=car_models selector={} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 71.9060ms
+  MOPED: 211.101.12.237:27017 KILL_CURSORS cursor_ids=[6937478962239499265] runtime: 0.1633ms
+  Rendered shares/_list.html.erb (135.0ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=chezhongguo_development command={:count=>"car_models", :query=>{}} runtime: 49.9309ms
+  Rendered car_models/index.html.erb within layouts/application (394.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 1599ms (Views: 404.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:08 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:08 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:08 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:08 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:08 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:08 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:08 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:08 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:08 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:08 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:08 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:08 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:23:08 +0800
+
+
+Started GET "/assets/default-car.png" for 127.0.0.1 at 2014-03-16 10:23:08 +0800
+
+
+Started GET "/brands" for 127.0.0.1 at 2014-03-16 10:23:10 +0800
+Processing by BrandsController#index as HTML
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 46.0592ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 768.3221ms
+  MOPED: 211.101.12.237:27017 GET_MORE     database=chezhongguo_development collection=brands limit=0 cursor_id=6937486565939692080 runtime: 360.8350ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=20 skip=0 batch_size=nil fields=nil runtime: 175.3929ms
+  Rendered brands/_hot.html.erb (189.8ms)
+  Rendered brands/_list.html.erb (7.4ms)
+  Rendered brands/_list.html.erb (3.6ms)
+  Rendered brands/_list.html.erb (3.7ms)
+  Rendered brands/_list.html.erb (6.4ms)
+  Rendered brands/_list.html.erb (19.8ms)
+  Rendered brands/index.html.erb within layouts/application (243.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 1445ms (Views: 263.9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:11 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:11 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:11 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:11 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:11 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:11 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:11 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:11 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:11 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:11 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:11 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:11 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:23:11 +0800
+
+
+Started GET "/assets/default.png" for 127.0.0.1 at 2014-03-16 10:23:11 +0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/default.png"):
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.6ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (120.7ms)
+
+
+Started GET "/autoparts" for 127.0.0.1 at 2014-03-16 10:23:41 +0800
+Processing by AutopartsController#index as HTML
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=autoparts selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 68.3549ms
+  Rendered autoparts/index.html.erb within layouts/application (70.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 110ms (Views: 90.7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:41 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:41 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:41 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:41 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:41 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:41 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:41 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:41 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:41 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:41 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:41 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:41 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:23:41 +0800
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-03-16 10:23:44 +0800
+Processing by QuestionsController#index as HTML
+  Rendered questions/_nav.html.erb (0.9ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=questions selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 90.9951ms
+  Rendered questions/_list.html.erb (96.5ms)
+  Rendered questions/_sidebar.html.erb (0.6ms)
+  Rendered questions/_form_search.html.erb (0.9ms)
+  Rendered questions/index.html.erb within layouts/application (103.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 156ms (Views: 115.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:44 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:44 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:44 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:44 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:44 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:44 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:44 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:44 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:44 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:44 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:44 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:44 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:23:44 +0800
+
+
+Started GET "/assets/bg_right_arrow_001.gif" for 127.0.0.1 at 2014-03-16 10:23:44 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-16 10:23:47 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 61ms (Views: 60.0ms)
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:47 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:47 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:47 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:47 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:47 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:47 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:47 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:47 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:47 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:47 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:47 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:47 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:23:47 +0800
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-03-16 10:23:50 +0800
+Processing by QuestionsController#index as HTML
+  Rendered questions/_nav.html.erb (0.8ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 49.2024ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=questions selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 57.2738ms
+  Rendered questions/_list.html.erb (110.1ms)
+  Rendered questions/_sidebar.html.erb (0.1ms)
+  Rendered questions/_form_search.html.erb (0.1ms)
+  Rendered questions/index.html.erb within layouts/application (113.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 122ms (Views: 121.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:50 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:50 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:50 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:50 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:50 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:50 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:50 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:50 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:50 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:50 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:50 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:50 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:23:50 +0800
+
+
+Started GET "/autoparts" for 127.0.0.1 at 2014-03-16 10:23:55 +0800
+Processing by AutopartsController#index as HTML
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=autoparts selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 46.4929ms
+  Rendered autoparts/index.html.erb within layouts/application (48.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 61ms (Views: 61.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:55 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:55 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:55 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:55 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:55 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:55 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:55 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:55 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:55 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:55 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:55 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:23:55 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:55 +0800
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-03-16 10:23:56 +0800
+Processing by QuestionsController#index as HTML
+  Rendered questions/_nav.html.erb (0.4ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 46.3228ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=questions selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 56.3976ms
+  Rendered questions/_list.html.erb (107.1ms)
+  Rendered questions/_sidebar.html.erb (0.1ms)
+  Rendered questions/_form_search.html.erb (0.2ms)
+  Rendered questions/index.html.erb within layouts/application (110.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 121ms (Views: 120.5ms)
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 7ms (Views: 7.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:57 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:23:58 +0800
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-03-16 10:23:58 +0800
+Processing by QuestionsController#index as HTML
+  Rendered questions/_nav.html.erb (0.8ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=questions selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 55.0065ms
+  Rendered questions/_list.html.erb (60.2ms)
+  Rendered questions/_sidebar.html.erb (0.1ms)
+  Rendered questions/_form_search.html.erb (0.4ms)
+  Rendered questions/index.html.erb within layouts/application (64.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 77ms (Views: 76.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:58 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:58 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:58 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:58 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:58 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:58 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:58 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:23:58 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:58 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:58 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:58 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:23:58 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:23:58 +0800
+
+
+Started GET "/questions/tags" for 127.0.0.1 at 2014-03-16 10:24:00 +0800
+Processing by QuestionsController#tags as HTML
+  Rendered questions/_nav.html.erb (0.6ms)
+  Rendered questions/_sidebar.html.erb (0.0ms)
+  Rendered questions/_form_search.html.erb (0.1ms)
+  Rendered questions/tags.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 12ms (Views: 12.2ms)
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:00 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:00 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:00 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:00 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:00 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:00 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:00 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:00 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:00 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:00 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:00 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:00 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:24:00 +0800
+
+
+Started GET "/questions/experts" for 127.0.0.1 at 2014-03-16 10:24:01 +0800
+Processing by QuestionsController#experts as HTML
+  Rendered questions/_nav.html.erb (0.9ms)
+  Rendered questions/_sidebar.html.erb (0.1ms)
+  Rendered questions/_form_search.html.erb (0.1ms)
+  Rendered questions/experts.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 13ms (Views: 13.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:01 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:01 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:01 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:01 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:01 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:01 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:01 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:01 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:01 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:01 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:01 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:01 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:24:01 +0800
+
+
+Started GET "/questions/unanswered" for 127.0.0.1 at 2014-03-16 10:24:02 +0800
+Processing by QuestionsController#unanswered as HTML
+  Rendered questions/_nav.html.erb (0.7ms)
+  Rendered questions/_sidebar.html.erb (0.0ms)
+  Rendered questions/_form_search.html.erb (0.2ms)
+  Rendered questions/unanswered.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 12ms (Views: 11.6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:02 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:02 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:02 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:02 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:02 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:02 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:02 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:02 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:02 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:02 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:02 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:02 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:24:02 +0800
+
+
+Started GET "/questions/my" for 127.0.0.1 at 2014-03-16 10:24:02 +0800
+Processing by QuestionsController#my as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 124ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-16 10:24:02 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 10ms (Views: 9.8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:03 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:03 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:03 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:03 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:03 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:03 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:03 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:03 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:03 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:03 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:03 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:03 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:24:03 +0800
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-03-16 10:24:06 +0800
+Processing by QuestionsController#index as HTML
+  Rendered questions/_nav.html.erb (0.4ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 46.4034ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=questions selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 54.7324ms
+  Rendered questions/_list.html.erb (105.8ms)
+  Rendered questions/_sidebar.html.erb (0.1ms)
+  Rendered questions/_form_search.html.erb (0.2ms)
+  Rendered questions/index.html.erb within layouts/application (109.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 121ms (Views: 120.7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:06 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:06 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:06 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:06 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:06 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:06 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:06 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:06 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:06 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:06 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:06 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:06 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:24:06 +0800
+
+
+Started GET "/questions/my" for 127.0.0.1 at 2014-03-16 10:24:07 +0800
+Processing by QuestionsController#my as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-16 10:24:07 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 13.9ms)
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:07 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:07 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:07 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:07 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:07 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:07 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:07 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:07 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:07 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:07 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:07 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:07 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:24:07 +0800
+
+
+Started GET "/autoparts" for 127.0.0.1 at 2014-03-16 10:24:08 +0800
+Processing by AutopartsController#index as HTML
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=autoparts selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 45.8876ms
+  Rendered autoparts/index.html.erb within layouts/application (47.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 60ms (Views: 59.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:09 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:09 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:09 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:09 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:09 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:09 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:09 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:09 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:09 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:09 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:09 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:09 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:24:09 +0800
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-16 10:24:11 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (30.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 45ms (Views: 43.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:11 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:11 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:11 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:11 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:11 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:11 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:11 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:11 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:11 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:11 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:11 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:11 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:24:11 +0800
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-03-16 10:24:14 +0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 21ms (Views: 20.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:14 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:14 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:14 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:14 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:14 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:14 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:14 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:14 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:14 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:14 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:14 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:14 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:24:14 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-16 10:24:19 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 8ms (Views: 7.6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:19 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:19 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:19 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:19 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:19 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:19 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:24:20 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:20 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:20 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:20 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:20 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:24:20 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:24:20 +0800
+
+
+Started GET "/autoparts" for 127.0.0.1 at 2014-03-16 10:25:10 +0800
+Processing by AutopartsController#index as HTML
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 46.0210ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=autoparts selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 47.4888ms
+  Rendered autoparts/index.html.erb within layouts/application (95.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 108ms (Views: 108.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:11 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:11 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:11 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:11 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:11 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:11 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:11 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:25:11 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:25:11 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:25:11 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:25:11 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:25:11 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:25:11 +0800
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-03-16 10:25:12 +0800
+Processing by QuestionsController#index as HTML
+  Rendered questions/_nav.html.erb (0.5ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 46.0763ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=questions selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 55.1346ms
+  Rendered questions/_list.html.erb (106.2ms)
+  Rendered questions/_sidebar.html.erb (0.1ms)
+  Rendered questions/_form_search.html.erb (0.5ms)
+  Rendered questions/index.html.erb within layouts/application (110.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 121ms (Views: 120.4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:12 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:12 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:12 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:12 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:12 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:12 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:12 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:25:12 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:25:12 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:25:12 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:25:12 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:25:12 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:25:12 +0800
+
+
+Started GET "/brands" for 127.0.0.1 at 2014-03-16 10:25:15 +0800
+Processing by BrandsController#index as HTML
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 745.1263ms
+  MOPED: 211.101.12.237:27017 GET_MORE     database=chezhongguo_development collection=brands limit=0 cursor_id=6938005224170890099 runtime: 361.4600ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=20 skip=0 batch_size=nil fields=nil runtime: 175.4247ms
+  Rendered brands/_hot.html.erb (187.2ms)
+  Rendered brands/_list.html.erb (3.0ms)
+  Rendered brands/_list.html.erb (3.6ms)
+  Rendered brands/_list.html.erb (2.9ms)
+  Rendered brands/_list.html.erb (7.9ms)
+  Rendered brands/_list.html.erb (21.1ms)
+  Rendered brands/index.html.erb within layouts/application (228.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1349ms (Views: 238.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:16 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:16 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:16 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:16 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:16 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:16 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:16 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:25:16 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:25:16 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:25:16 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:25:16 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:25:16 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:25:16 +0800
+
+
+Started GET "/assets/default.png" for 127.0.0.1 at 2014-03-16 10:25:16 +0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/default.png"):
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.3ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (129.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-16 10:25:18 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 10ms (Views: 9.7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:18 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:18 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:18 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:18 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:18 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:18 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:25:18 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:25:18 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:25:18 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:25:18 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:25:18 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:25:18 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:25:18 +0800
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from service at /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-16 10:26:03 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+  Rendered cars/_form_search.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (5.9ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 77ms (Views: 76.4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:03 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:03 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:03 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:03 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:03 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:03 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:03 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:03 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:03 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:03 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:03 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:03 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:03 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:26:03 +0800
+
+
+Started GET "/car_models" for 127.0.0.1 at 2014-03-16 10:26:04 +0800
+Processing by CarModelsController#index as HTML
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 97.8792ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1304.7385ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=20 skip=0 batch_size=nil fields=nil runtime: 174.6003ms
+  Rendered shares/_brands_selector_hot.html.erb (181.1ms)
+  Rendered shares/_brands_selector_list.html.erb (1.9ms)
+  Rendered shares/_brands_selector_list.html.erb (1.6ms)
+  Rendered shares/_brands_selector_list.html.erb (1.2ms)
+  Rendered shares/_brands_selector_list.html.erb (2.8ms)
+  Rendered shares/_brands_selector_list.html.erb (38.4ms)
+  Rendered car_models/_brands_selector.html.erb (231.3ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=car_models selector={} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 72.0729ms
+  MOPED: 211.101.12.237:27017 KILL_CURSORS cursor_ids=[6938217297562620590] runtime: 0.1372ms
+  Rendered shares/_list.html.erb (85.4ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=chezhongguo_development command={:count=>"car_models", :query=>{}} runtime: 47.0199ms
+  Rendered car_models/index.html.erb within layouts/application (590.9ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (33.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 2075ms (Views: 632.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:06 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:06 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:06 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:06 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:06 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:06 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:06 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:06 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:06 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:06 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:06 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:06 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:26:06 +0800
+
+
+Started GET "/assets/default-car.png" for 127.0.0.1 at 2014-03-16 10:26:06 +0800
+
+
+Started GET "/brands" for 127.0.0.1 at 2014-03-16 10:26:08 +0800
+Processing by BrandsController#index as HTML
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 729.7917ms
+  MOPED: 211.101.12.237:27017 GET_MORE     database=chezhongguo_development collection=brands limit=0 cursor_id=6938226231676052872 runtime: 364.3779ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=brands selector={"$query"=>{}, "$orderby"=>{"hot_index"=>-1}} flags=[] limit=20 skip=0 batch_size=nil fields=nil runtime: 174.6702ms
+  Rendered brands/_hot.html.erb (182.5ms)
+  Rendered brands/_list.html.erb (3.9ms)
+  Rendered brands/_list.html.erb (5.7ms)
+  Rendered brands/_list.html.erb (3.2ms)
+  Rendered brands/_list.html.erb (7.0ms)
+  Rendered brands/_list.html.erb (19.7ms)
+  Rendered brands/index.html.erb within layouts/application (226.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 1337ms (Views: 236.8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:09 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:09 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:09 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:09 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:09 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:09 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:09 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:09 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:09 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:09 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:09 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:09 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:26:09 +0800
+
+
+Started GET "/assets/default.png" for 127.0.0.1 at 2014-03-16 10:26:09 +0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/default.png"):
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1.rc3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1.rc3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1.rc3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1.rc3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1.rc3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1.rc3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/hw/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.1ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.3ms)
+  Rendered /home/hw/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1.rc3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (70.1ms)
+
+
+Started GET "/autoparts" for 127.0.0.1 at 2014-03-16 10:26:10 +0800
+Processing by AutopartsController#index as HTML
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 45.5120ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=autoparts selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 45.7586ms
+  Rendered autoparts/index.html.erb within layouts/application (94.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 123ms (Views: 107.7ms)
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:10 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:10 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:10 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:10 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:10 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:10 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:10 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:10 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:10 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:10 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:10 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:10 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:26:10 +0800
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-03-16 10:26:11 +0800
+Processing by QuestionsController#index as HTML
+  Rendered questions/_nav.html.erb (0.8ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 45.6702ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=questions selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 53.4689ms
+  Rendered questions/_list.html.erb (103.1ms)
+  Rendered questions/_sidebar.html.erb (0.4ms)
+  Rendered questions/_form_search.html.erb (0.9ms)
+  Rendered questions/index.html.erb within layouts/application (108.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 179ms (Views: 118.2ms)
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:11 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:11 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:11 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:11 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:11 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:11 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:11 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:11 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:11 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:11 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:11 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:11 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:26:11 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-16 10:26:13 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 10ms (Views: 9.8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:13 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:13 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:13 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:13 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:13 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:13 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:13 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:13 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:13 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:13 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:13 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:13 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:26:13 +0800
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-03-16 10:26:14 +0800
+Processing by QuestionsController#index as HTML
+  Rendered questions/_nav.html.erb (0.4ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=questions selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 53.7595ms
+  Rendered questions/_list.html.erb (58.2ms)
+  Rendered questions/_sidebar.html.erb (0.1ms)
+  Rendered questions/_form_search.html.erb (0.2ms)
+  Rendered questions/index.html.erb within layouts/application (61.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 74ms (Views: 73.6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:14 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:14 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:14 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:14 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:14 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:14 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:14 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:14 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:14 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:14 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:14 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:14 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:26:14 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-16 10:26:15 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 10ms (Views: 10.2ms)
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:15 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:15 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:15 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:15 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:15 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:15 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:15 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:15 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:15 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:15 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:15 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:15 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:26:15 +0800
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-03-16 10:26:17 +0800
+Processing by QuestionsController#index as HTML
+  Rendered questions/_nav.html.erb (0.9ms)
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 45.3805ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=questions selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 53.4857ms
+  Rendered questions/_list.html.erb (103.7ms)
+  Rendered questions/_sidebar.html.erb (0.1ms)
+  Rendered questions/_form_search.html.erb (0.2ms)
+  Rendered questions/index.html.erb within layouts/application (107.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 122ms (Views: 120.7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:17 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:17 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:17 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:17 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:17 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:17 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:17 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:17 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:17 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:17 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:17 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:17 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:26:17 +0800
+
+
+Started GET "/questions/tags" for 127.0.0.1 at 2014-03-16 10:26:20 +0800
+Processing by QuestionsController#tags as HTML
+  Rendered questions/_nav.html.erb (0.5ms)
+  Rendered questions/_sidebar.html.erb (0.0ms)
+  Rendered questions/_form_search.html.erb (0.1ms)
+  Rendered questions/tags.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 10ms (Views: 9.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:20 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:20 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:20 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:20 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:20 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:20 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:20 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:20 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:20 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:20 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:20 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:20 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:26:20 +0800
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-03-16 10:26:21 +0800
+Processing by QuestionsController#index as HTML
+  Rendered questions/_nav.html.erb (0.7ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=questions selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 53.5444ms
+  Rendered questions/_list.html.erb (58.3ms)
+  Rendered questions/_sidebar.html.erb (0.1ms)
+  Rendered questions/_form_search.html.erb (0.2ms)
+  Rendered questions/index.html.erb within layouts/application (62.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 75ms (Views: 74.4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:22 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:22 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:22 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:22 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:22 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:22 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:22 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:22 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:22 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:22 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:22 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:22 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:26:22 +0800
+
+
+Started GET "/questions/tags" for 127.0.0.1 at 2014-03-16 10:26:22 +0800
+Processing by QuestionsController#tags as HTML
+  Rendered questions/_nav.html.erb (0.6ms)
+  Rendered questions/_sidebar.html.erb (0.1ms)
+  Rendered questions/_form_search.html.erb (0.2ms)
+  Rendered questions/tags.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 15ms (Views: 14.8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:23 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:23 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:23 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:23 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:23 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:23 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:23 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:23 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:23 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:23 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:23 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:23 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:26:23 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-16 10:26:26 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 15ms (Views: 14.6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:26 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:26 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:26 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:26 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:26 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:26 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:26 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:26 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:26:26 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:26 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:26 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:26:26 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:26:26 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-16 10:34:09 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 8ms (Views: 7.9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:34:09 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:34:09 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:34:09 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:34:09 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:34:09 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:34:09 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:34:09 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:34:09 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:34:09 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:34:09 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:34:09 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:34:09 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 10:34:09 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:34:09 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-16 10:35:06 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 11ms (Views: 10.8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:35:06 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:35:06 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:35:06 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:35:06 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:35:06 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:35:06 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:35:06 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:35:06 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:35:06 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:35:06 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:35:06 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:35:06 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-16 10:35:06 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:35:06 +0800
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-03-16 10:35:08 +0800
+Processing by ArticlesController#index as HTML
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 45.8423ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=articles selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 47.0669ms
+  Rendered articles/index.html.erb within layouts/application (95.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 124ms (Views: 108.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:35:08 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:35:08 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:35:08 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:35:08 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:35:08 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:35:08 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:35:08 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:35:08 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:35:08 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:35:08 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:35:08 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:35:08 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:35:08 +0800
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-03-16 10:35:20 +0800
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (30.6ms)
+  Rendered articles/new.html.erb within layouts/application (32.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 45ms (Views: 44.8ms)
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:35:20 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:35:20 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:35:20 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:35:20 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:35:20 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:35:20 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:35:20 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:35:20 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:35:20 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:35:20 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:35:20 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:35:20 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:35:20 +0800
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-03-16 10:41:13 +0800
+Processing by ArticlesController#index as HTML
+  MOPED: 211.101.12.237:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 46.2543ms
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=articles selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 45.6852ms
+  Rendered articles/index.html.erb within layouts/application (93.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered cars/_form_search.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 108ms (Views: 107.5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:41:14 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:41:14 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:41:14 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:41:14 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:41:14 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:41:14 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:41:14 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:41:14 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:41:14 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:41:14 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:41:14 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:41:14 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:41:14 +0800
+
+
+Started GET "/questions" for 127.0.0.1 at 2014-03-16 10:41:15 +0800
+Processing by QuestionsController#index as HTML
+  Rendered questions/_nav.html.erb (0.5ms)
+  MOPED: 211.101.12.237:27017 QUERY        database=chezhongguo_development collection=questions selector={"$query"=>{}, "$orderby"=>{"created_at"=>-1}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 52.9300ms
+  Rendered questions/_list.html.erb (57.9ms)
+  Rendered questions/_sidebar.html.erb (0.1ms)
+  Rendered questions/_form_search.html.erb (0.6ms)
+  Rendered questions/index.html.erb within layouts/application (62.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 99ms (Views: 71.9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-16 10:41:15 +0800
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-03-16 10:41:15 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-03-16 10:41:15 +0800
+
+
+Started GET "/assets/cars.css?body=1" for 127.0.0.1 at 2014-03-16 10:41:15 +0800
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-03-16 10:41:15 +0800
+
+
+Started GET "/assets/brands.css?body=1" for 127.0.0.1 at 2014-03-16 10:41:15 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-16 10:41:15 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-16 10:41:15 +0800
+
+
+Started GET "/assets/jquery.timeago.js?body=1" for 127.0.0.1 at 2014-03-16 10:41:15 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-16 10:41:15 +0800
+
+
+Started GET "/assets/jquery.timeago.settings.js?body=1" for 127.0.0.1 at 2014-03-16 10:41:15 +0800
+
+
+Started GET "/assets/search.js?body=1" for 127.0.0.1 at 2014-03-16 10:41:15 +0800
+
+
+Started GET "/assets/logo.gif" for 127.0.0.1 at 2014-03-16 10:41:15 +0800

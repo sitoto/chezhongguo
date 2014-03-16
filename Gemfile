@@ -1,6 +1,5 @@
 source 'http://ruby.taobao.org'
-#gem 'rails', '3.2.6'
-gem 'rails', '4.0.1.rc3'
+gem 'rails', '4.0.4'
 
 gem 'sass-rails', "~> 4.0.0"
 gem 'coffee-rails', "~> 4.0.0"
@@ -18,6 +17,8 @@ gem 'carrierwave-mongoid'
 
 gem 'mongo'
 gem 'bson_ext'
+
+gem 'bootstrap-sass', '~> 3.1.1'
 
 #file upload
 gem "mini_magick", "3.4"

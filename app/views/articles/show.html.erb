@@ -1,0 +1,99 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Mytitle:</strong>
+  <%= @article.mytitle %>
+</p>
+
+<p>
+  <strong>Mydescription:</strong>
+  <%= @article.mydescription %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @article.tags %>
+</p>
+
+<p>
+  <strong>Only author:</strong>
+  <%= @article.only_author %>
+</p>
+
+<p>
+  <strong>Published:</strong>
+  <%= @article.published %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @article.title %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @article.author %>
+</p>
+
+<p>
+  <strong>Class name:</strong>
+  <%= @article.class_name %>
+</p>
+
+<p>
+  <strong>First time:</strong>
+  <%= @article.first_time %>
+</p>
+
+<p>
+  <strong>Last time:</strong>
+  <%= @article.last_time %>
+</p>
+
+<p>
+  <strong>From name:</strong>
+  <%= @article.from_name %>
+</p>
+
+<p>
+  <strong>From url:</strong>
+  <%= @article.from_url %>
+</p>
+
+<p>
+  <strong>Last url:</strong>
+  <%= @article.last_url %>
+</p>
+
+<p>
+  <strong>From ip:</strong>
+  <%= @article.from_ip %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @article.status %>
+</p>
+
+<p>
+  <strong>Pages count:</strong>
+  <%= @article.pages_count %>
+</p>
+
+<p>
+  <strong>Words count:</strong>
+  <%= @article.words_count %>
+</p>
+
+<p>
+  <strong>Like count:</strong>
+  <%= @article.like_count %>
+</p>
+
+<p>
+  <strong>Hits:</strong>
+  <%= @article.hits %>
+</p>
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>

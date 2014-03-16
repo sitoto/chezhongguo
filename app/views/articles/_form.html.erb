@@ -1,0 +1,93 @@
+<%= form_for(@article) do |f| %>
+  <% if @article.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@article.errors.count, "error") %> prohibited this article from being saved:</h2>
+
+      <ul>
+      <% @article.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :mytitle %><br>
+    <%= f.text_field :mytitle %>
+  </div>
+  <div class="field">
+    <%= f.label :mydescription %><br>
+    <%= f.text_field :mydescription %>
+  </div>
+  <div class="field">
+    <%= f.label :tags %><br>
+    <%= f.text_field :tags %>
+  </div>
+  <div class="field">
+    <%= f.label :only_author %><br>
+    <%= f.check_box :only_author %>
+  </div>
+  <div class="field">
+    <%= f.label :published %><br>
+    <%= f.check_box :published %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :author %><br>
+    <%= f.text_field :author %>
+  </div>
+  <div class="field">
+    <%= f.label :class_name %><br>
+    <%= f.text_field :class_name %>
+  </div>
+  <div class="field">
+    <%= f.label :first_time %><br>
+    <%= f.text_field :first_time %>
+  </div>
+  <div class="field">
+    <%= f.label :last_time %><br>
+    <%= f.text_field :last_time %>
+  </div>
+  <div class="field">
+    <%= f.label :from_name %><br>
+    <%= f.text_field :from_name %>
+  </div>
+  <div class="field">
+    <%= f.label :from_url %><br>
+    <%= f.text_field :from_url %>
+  </div>
+  <div class="field">
+    <%= f.label :last_url %><br>
+    <%= f.text_field :last_url %>
+  </div>
+  <div class="field">
+    <%= f.label :from_ip %><br>
+    <%= f.text_field :from_ip %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.number_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :pages_count %><br>
+    <%= f.number_field :pages_count %>
+  </div>
+  <div class="field">
+    <%= f.label :words_count %><br>
+    <%= f.text_field :words_count %>
+  </div>
+  <div class="field">
+    <%= f.label :like_count %><br>
+    <%= f.number_field :like_count %>
+  </div>
+  <div class="field">
+    <%= f.label :hits %><br>
+    <%= f.number_field :hits %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

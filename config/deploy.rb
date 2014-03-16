@@ -1,17 +1,22 @@
-#encoding: UTF-8
+require 'bundler/capistrano'
+require 'rvm/capistrano'
+
+default_run_options[:pty] = true  # Must be set for the password prompt
+# from git to work
+
+set :rvm_ruby_string, 'ruby-2.1.1'
+set :rvm_type, :user
 set :application, "chezhongguo"
-set :scm, :git
-# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
-set :repository,  "git@42.121.83.163:chezhongguo"
+set :repository, "git://github.com/sitoto/chezhongguo.git"
 set :branch, "master"
-set :user, "ruby"
-set :keep_releases, 5
+set :scm, :git
+set :user, "sitoto"
+set :deploy_to, "/mnt/www/#{application}"
+#set :runner, "sitoto"
 
-
-set :deploy_to, "/var/www/#{application}"
-set :deploy_via, :remote_cache
-set :use_sudo, false
-set :rails_env, "production"
+set :git_shallow_clone, 1 # Shallow cloning will do a clone each time, 
+# but will only get the top commit, 
+# not the entire repository history.
 
 role :web, "42.121.0.135"                         # Your HTTP server, Apache/etc
 role :app, "42.121.0.135"                          # This may be the same as your `Web` server
@@ -27,40 +32,63 @@ role :db,  "42.121.0.135" , :primary => true # This is where Rails migrations wi
 # If you are using Passenger mod_rails uncomment this:
 #load 'deploy/assets'
 
-set :bundler_cmd, "bundle install --deployment --without=development,test"
-
+set :unicorn_path, "#{deploy_to}/current/config/unicorn.rb"
 
 namespace :deploy do
-
-  task :start do ; end
-  task :stop do ; end
-
-#  task :chmod, :roles => :web do
-#    run "chmod -R 777 #{deploy_to}/*"
-#  end
-
-#  task :update_symlink do
-#    run "ln -nfs #{shared_path}/uploads #{release_path}/public/uploads"
-#  end
-
-  task :restart, :roles => :app, :except => { :no_release => true } do
-    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+  task :start, :roles => :app do
+    run "cd #{deploy_to}/current/; RAILS_ENV=production bundle exec unicorn_rails -c #{unicorn_path} -D"
   end
 
+  task :stop, :roles => :app do
+    run "kill -QUIT `cat #{deploy_to}/current/tmp/pids/unicorn.pid`"
+  end
+
+  desc "Restart Application"
+  task :restart, :roles => :app do
+    run "kill -USR2 `cat #{deploy_to}/current/tmp/pids/unicorn.pid`"
+  end
 end
 
+namespace :delayed_job do
+  desc "Start delayed_job process" 
+  task :start, :roles => :app do
+    run "cd #{current_path}; RAILS_ENV=production bin/delayed_job start "
+  end
 
-set :default_environment, {
-  'PATH' => "/home/ruby/.rvm/gems/ruby-1.9.3-p194/bin:/home/ruby/.rvm/gems/ruby-1.9.3-p194@global/bin:/home/ruby/.rvm/rubies/ruby-1.9.3-p194/bin:/home/;",
-  'RUBY_VERSION' => 'ruby-1.9.3-p194',
-  'GEM_HOME' => '/home/sitoto/.rvm/gems/ruby-1.9.3-p194',
-  'GEM_PATH' => '/home/sitoto/.rvm/gems/ruby-1.9.3-p194:/home/sitoto/.rvm/gems/ruby-1.9.3-p194@global'
-}
+  desc "Stop delayed_job process" 
+  task :stop, :roles => :app do
+    run "cd #{current_path}; RAILS_ENV=production bin/delayed_job stop"
+  end
 
-#after "deploy:finalize_update", "deploy:update_symlink" # 如果有實作使用者上傳檔案到public/system，請打開
+  desc "Restart delayed_job process" 
+  task :restart, :roles => :app do
+    run "cd #{current_path}; RAILS_ENV=production bin/delayed_job restart"
+  end
+end
 
+task :init_shared_path, :roles => :web do
+  run "mkdir -p #{deploy_to}/shared/log"
+  run "mkdir -p #{deploy_to}/shared/pids"
+  run "mkdir -p #{deploy_to}/shared/assets"
+end
 
+task :link_shared_files, :roles => :web do
+  run "ln -sf #{deploy_to}/shared/config/*.yml #{deploy_to}/current/config/"
+  run "ln -sf #{deploy_to}/shared/config/unicorn.rb #{deploy_to}/current/config/"
+  run "ln -sf #{deploy_to}/shared/config/initializers/secret_token.rb #{deploy_to}/current/config/initializers"
+end
 
+task :compile_assets, :roles => :web do
+  run "cd #{deploy_to}/current/; RAILS_ENV=production bundle exec rake assets:precompile"
+end
 
+task :mongoid_create_indexes, :roles => :web do
+    run "cd #{deploy_to}/current/; RAILS_ENV=production bundle exec rake db:mongoid:create_indexes"
+end
 
+after "deploy:finalize_update","deploy:symlink", :init_shared_path, :link_shared_files, :compile_assets
+
+#after "deploy:start", "delayed_job:start"
+#after "deploy:stop", "delayed_job:stop"
+#after "deploy:restart", "delayed_job:restart"
 
