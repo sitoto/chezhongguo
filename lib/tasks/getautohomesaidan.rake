@@ -132,8 +132,8 @@ task :fetch_posts => :environment do
         post.level = level
         post.my_level = j
         post.created_at = published_at
-        content.gsub!(/http:\/\/club\d\.autoimg\.cn\/album\/userphotos\/\d*\/\d*\/\d*\//,"/newimages/")
-        content.gsub!(/http:\/\/www\.autoimg\.cn\/album\/\d*\/\d*\/\d*\//,"/newimages/")
+        content.gsub!(/http:\/\/club\d\.autoimg\.cn\/album\/userphotos\/\d*\/\d*\/\d*\//,"/system/newimages/")
+        content.gsub!(/http:\/\/www\.autoimg\.cn\/album\/\d*\/\d*\/\d*\//,"/system/newimages/")
 
         content.gsub!('src="http://x.autoimg.cn/club/lazyload.png"',"")
         content.gsub!('src9',"src")
@@ -160,7 +160,7 @@ task :fetch_posts => :environment do
         imgname =  img.url.to_s.split('/')[-1]
         imgname =  imgname.split('?')[0]
 
-        filepath = "public/newimages/#{imgname}"
+        filepath = "public/system/newimages/#{imgname}"
         if File.exist?(filepath)
           puts "exist"
         else
@@ -177,7 +177,7 @@ task :fetch_posts => :environment do
           puts imgurl = img.at_xpath("@src9").to_s
           imgname =  imgurl.split('/')[-1]
           imgname =  imgname.split('?')[0]
-          filepath = "public/newimages/#{imgname}"
+          filepath = "public/system/newimages/#{imgname}"
           begin
             agent.get(img.at_xpath('@src9').to_s,[],  referer = "http://club.autohome.com.cn/" ).save(filepath) 
           rescue
