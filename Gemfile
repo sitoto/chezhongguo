@@ -19,6 +19,13 @@ gem 'bootstrap-sass', '~> 3.1.1'
 #file upload
 gem "mini_magick", "3.4"
 
+gem 'kaminari', '0.14.1'
+
+gem "chinese_pinyin"
+# YAML 配置信息
+gem "settingslogic", "~> 2.0.6"
+
+gem "cells", "~> 3.8.8"
 
 gem "rspec-rails", ">= 2.11.0", :group => [:development, :test]
 gem "capybara", ">= 1.1.2", :group => :test
@@ -30,12 +37,7 @@ gem "launchy", ">= 2.1.2", :group => :test
 gem "factory_girl_rails", ">= 4.0.0", :group => [:development, :test]
 gem 'devise', '3.0.1'
 gem 'devise-encryptable', '0.1.2'
+# Use unicorn as the app server
+gem 'unicorn'
 
 
-gem 'kaminari', '0.14.1'
-
-gem "chinese_pinyin"
-# YAML 配置信息
-gem "settingslogic", "~> 2.0.6"
-
-gem "cells", "~> 3.8.8"
