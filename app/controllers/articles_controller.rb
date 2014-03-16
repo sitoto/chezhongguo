@@ -3,11 +3,22 @@ class ArticlesController < ApplicationController
 
   # GET /articles
   def index
-    @articles = Article.all
+    @articles = Article.where(:status => 1)
   end
 
   # GET /articles/1
   def show
+    ts = @article.topics #.where(:status => 1) 
+    ts.each do |item|
+      item.posts.each do |post|
+        @content = post.content
+        break
+      end
+      break
+    end
+ 
+#    topics = @article.topics.where(:status => 1, :page_num => 1)
+  #    @content = "内容不存在！"
   end
 
   # GET /articles/new

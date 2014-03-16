@@ -1,15 +1,19 @@
 production:
+  options:
+    identity_map_enabled: true
   sessions:
     default:
       database: chezhongguo
       hosts:
         - localhost:27017
-    options:
-      allow_dynamic_fields: true
+      options:
 
 
 development:
   # Configure available database sessions. (required)
+  options:
+    identity_map_enabled: true
+
   sessions:
     # Defines the default session. (required)
     default:
