@@ -43,8 +43,8 @@ module Common
 
 #    html_stream.gsub!('src="http://x.autoimg.cn/club/lazyload.png"',"")
 #    html_stream.gsub!('src9',"src")
-    html_stream.gsub!('onload="tz.picLoaded(this)"',"")
-    html_stream.gsub!('onerror="tz.picNotFind(this)"',"")
+#    html_stream.gsub!('onload="tz.picLoaded(this)"',"")
+#    html_stream.gsub!('onerror="tz.picNotFind(this)"',"")
 
 
     if html_stream.to_s == ""
