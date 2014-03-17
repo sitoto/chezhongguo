@@ -1,15 +1,9 @@
 <table class="table" > 
   <thead>
     <tr>
-      <th>Mytitle</th>
-      <th>Tags</th>
-      <th>Author</th>
-      <th>Class name</th>
-      <th>First time</th>
-      <th>From name</th>
-      <th>Like count</th>
-      <th>Hits</th>
-      <th></th>
+      <th><%= t('title') %></th>
+      <th><%= t('tags') %></th>
+      <th><%= t('class_name') %></th>
     </tr>
   </thead>
 
@@ -18,12 +12,7 @@
       <tr>
         <td><%= link_to article.title, article %></td>
         <td><%= article.tags.join(',') %></td>
-        <td><%= article.author %></td>
         <td><%= article.class_name %></td>
-        <td><%= article.first_time %></td>
-        <td><%= article.like_count %></td>
-        <td><%= article.hits %></td>
-        <td><%= link_to '编辑', edit_article_path(article) %></td>
       </tr>
     <% end %>
   </tbody>
