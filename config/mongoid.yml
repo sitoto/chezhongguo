@@ -1,6 +1,4 @@
 production:
-  options:
-    identity_map_enabled: true
   sessions:
     default:
       database: chezhongguo
