@@ -1,17 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<h1><%= @article.title %></h1>
-
-<p>
-  <%= @article.tags.join(',') %>
-</p>
-<p>
-  <%= @article.hits %>
+<h1><%= @article.title %><small><%= @article.tags.join(',') %></small></h1>
+<p class="text-center">
+点击数:  <%= @article.hits %>
 </p>
 
-<p>
+<p class="lead">
 <%=  raw @content %>
 </p>
 
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+<%= link_to '返回列表', articles_path %>
