@@ -37,7 +37,7 @@ module Common
     end
   end
   def fetch_doc(url)
-    html_stream = safe_open(url , retries = 3, sleep_time = 0.2, headers = {})
+    html_stream = utf_safe_open(url , retries = 3, sleep_time = 0.2, headers = {})
 #    html_stream.gsub!(/http:\/\/club\d\.autoimg\.cn\/album\/userphotos\/\d*\/\d*\/\d*\//,"/newimages/")
 #    html_stream.gsub!(/http:\/\/www\.autoimg\.cn\/album\/\d*\/\d*\/\d*\//,"/newimages/")
 
@@ -51,7 +51,6 @@ module Common
       puts "网页 访问出错，无内容。"
       return ""
     else
-=begin      
       begin
         html_stream.encode!('utf-8', 'gbk', :invalid => :replace) #忽略无法识别的字符
         #html_stream.force_encoding("gbk")
@@ -60,7 +59,6 @@ module Common
       rescue StandardError,Timeout::Error, SystemCallError, Errno::ECONNREFUSED #有些异常不是标准异常  
        puts $!  
       end
-=end      
       Nokogiri::HTML(html_stream)
     end
   end
@@ -73,6 +71,24 @@ module Common
     @file_to_write = IoFactory.init(file_path)
   end #create_file_to_write
 
+  def utf_safe_open(url, retries = 5, sleep_time = 0.42,  headers = {})
+    begin  
+      html = open(url).read  
+      rescue StandardError,Timeout::Error, SystemCallError, Errno::ECONNREFUSED #有些异常不是标准异常  
+      puts $!  
+      retries -= 1  
+      if retries > 0  
+        sleep sleep_time and retry  
+
+      else  
+	#logger.error($!)
+	#错误日志
+        #TODO Logging..  
+      end  
+    end
+  end
+
+
 
   def safe_open(url, retries = 5, sleep_time = 0.42,  headers = {})
     begin  
@@ -83,14 +99,13 @@ module Common
       if retries > 0  
         sleep sleep_time and retry  
       else  
-				#logger.error($!)
-				#错误日志
+	#logger.error($!)
+	#错误日志
         #TODO Logging..  
       end  
     end
   end
 end
-
 class IoFactory
 	attr_reader :file
 	def self.init file

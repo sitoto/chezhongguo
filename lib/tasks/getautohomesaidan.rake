@@ -104,16 +104,20 @@ task :fetch_posts => :environment do
   require_relative "common"
 
   include Common
-  articles  = Article.where(:status => 1)
+  articles  = Article.where(:status => 1).asc(:_id)
   articles.each do |article|
-    ts = article.topics#.where(:status.ne => 1)
+#    ts = article.topics.where(:status.ne => 1)
+#    ts = article.topics.where(:posts =>  nil)
+    ts = article.topics.where(:status =>  9)
 
+puts ts.length
     ts.each_with_index do |topic, i|
       puts url = topic.url
       topic.posts = []
       posts = []      
-
-      doc = fetch_doc(url)
+      doc = Nokogiri::HTML(open(url))
+#      doc.encoding = 'gbk'
+#      doc = fetch_doc(url)
       if doc.blank? 
         puts "#{article.title}-#{url} - 当前文档 第#{topic.page_num}页 为空，=>下一篇文章"
         topic.status = "9"
@@ -128,20 +132,22 @@ task :fetch_posts => :environment do
         level =  item.at_xpath('div[@class="conright fl"]/div[@class="rconten"]/div[1]/div/a[@class="rightbutlz"]/@rel').to_s.strip
         content = item.at_xpath('div//div[@xname="content"]/div[@class="w740"]').to_s
 
-        post.author = author
-        post.level = level
+        post.author = author.encode!("utf-8")
+        post.level = level.encode!("utf-8")
         post.my_level = j
-        post.created_at = published_at
+        post.created_at = published_at.encode!("utf-8")
         content.gsub!(/http:\/\/club\d\.autoimg\.cn\/album\/userphotos\/\d*\/\d*\/\d*\//,"/system/newimages/")
+        content.gsub!(/http:\/\/www\.autoimg\.cn\/album\/userphotos\/\d*\/\d*\/\d*\//,"/system/newimages/")
         content.gsub!(/http:\/\/www\.autoimg\.cn\/album\/\d*\/\d*\/\d*\//,"/system/newimages/")
 
+#http://www.autoimg.cn/album/userphotos/2012/9/15/500_e44e_634fbb03_634fbb03.jpg?689
         content.gsub!('src="http://x.autoimg.cn/club/lazyload.png"',"")
         content.gsub!('src9',"src")
         content.gsub!('onload="tz.picLoaded(this)"',"")
         content.gsub!('onerror="tz.picNotFind(this)"',"")
 
 
-        post.content = content
+        post.content = content.encode!("utf-8")
 
         post.page_num = topic.page_num
         posts << post
@@ -175,10 +181,10 @@ task :fetch_posts => :environment do
       doc.xpath("//div[@class='w740']//img").each do  |img|
         if img.at_xpath("@src9")
           puts imgurl = img.at_xpath("@src9").to_s
-          imgname =  imgurl.split('/')[-1]
-          imgname =  imgname.split('?')[0]
-          filepath = "public/system/newimages/#{imgname}"
           begin
+            imgname =  imgurl.split('/')[-1]
+            imgname =  imgname.split('?')[0]
+            filepath = "public/system/newimages/#{imgname}"
             agent.get(img.at_xpath('@src9').to_s,[],  referer = "http://club.autohome.com.cn/" ).save(filepath) 
           rescue
             puts "error to open"
