@@ -8,14 +8,14 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1
   def show
-    ts = @article.topics #.where(:status => 1) 
+    ts = @article.topics.asc(:_id) #.where(:status => 1) 
+    contents = []
     ts.each do |item|
       item.posts.each do |post|
-        @content = post.content
-        break
+        contents << post.content
       end
-      break
     end
+    @content = contents.join('<hr>')
  
 #    topics = @article.topics.where(:status => 1, :page_num => 1)
   #    @content = "内容不存在！"

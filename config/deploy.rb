@@ -73,7 +73,7 @@ task :init_shared_path, :roles => :web do
 end
 
 task :link_shared_files, :roles => :web do
-  run "ln -s #{deploy_to}/shared/newimages #{deploy_to}/current/public/system/newimages"
+  run "ln -sf #{deploy_to}/shared/newimages #{deploy_to}/current/public/system/newimages"
   run "ln -sf #{deploy_to}/shared/config/*.yml #{deploy_to}/current/config/"
   run "ln -sf #{deploy_to}/shared/config/unicorn.rb #{deploy_to}/current/config/"
   run "ln -sf #{deploy_to}/shared/config/initializers/secret_token.rb #{deploy_to}/current/config/initializers"

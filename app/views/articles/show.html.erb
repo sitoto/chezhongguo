@@ -1,35 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
+<h1><%= @article.title %></h1>
 
 <p>
-  <strong>Class name:</strong>
-  <%= @article.class_name %>
-</p>
-
-
-<p>
-  <strong>Tags:</strong>
   <%= @article.tags.join(',') %>
 </p>
 <p>
-  <strong>Author:</strong>
-  <%= @article.author %>
-</p>
-<p>
-  <strong>First time:</strong>
-  <%= @article.first_time %>
-</p>
-<p>
-  <strong>Like count:</strong>
-  <%= @article.like_count %>
-</p>
-
-<p>
-  <strong>Hits:</strong>
   <%= @article.hits %>
 </p>
 
