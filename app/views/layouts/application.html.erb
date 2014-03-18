@@ -19,8 +19,10 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <div id="container" class="container">
+    <div id="container">
       <%= render 'layouts/header' %>
+    </div>
+    <div id="container">
       <div id="main" role="main">
         <% if content_for?(:site_nav) %>
           <div id="site_nav">
