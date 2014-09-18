@@ -21,7 +21,7 @@ development:
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
-        - 211.101.12.237:27017
+        - localhost:27017
       options:
         # Change whether the session persists in safe mode by default.
         # (default: false)

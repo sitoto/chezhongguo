@@ -49,6 +49,7 @@ task :fetch_topics => :environment do
     puts "第几篇文章: #{i}"
     topic_url = art.from_url
     doc = fetch_doc(topic_url)
+
     if doc.blank? 
       puts "#{art.title}-#{topic_url} - 当前文档为空，next item"
       art.status = 9
@@ -57,6 +58,7 @@ task :fetch_topics => :environment do
     end
     # 获取到网页数据 分析处理内容
     puts title = doc.at_xpath('//div[@id="consnav"]/span[4]/text()').to_s
+
     if title.blank?
       puts "页面解析错误， 下一篇文章"
       art.status = 9
@@ -92,6 +94,7 @@ task :fetch_topics => :environment do
 
       topic.save
     end
+    break
 
   end
 end
@@ -106,9 +109,10 @@ task :fetch_posts => :environment do
   include Common
   articles  = Article.where(:status => 1).asc(:_id)
   articles.each do |article|
+    puts article.title
 #    ts = article.topics.where(:status.ne => 1)
 #    ts = article.topics.where(:posts =>  nil)
-    ts = article.topics.where(:status =>  9)
+    ts = article.topics#.where(:status =>  9)
 
 puts ts.length
     ts.each_with_index do |topic, i|
@@ -192,7 +196,6 @@ puts ts.length
         end
 
       end
-
 
     end #end of topic
   end

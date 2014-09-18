@@ -52,10 +52,11 @@ module Common
       return ""
     else
       begin
-        html_stream.encode!('utf-8', 'gbk', :invalid => :replace) #忽略无法识别的字符
+#        html_stream.encode!('utf-8', 'gbk', :invalid => :replace) #忽略无法识别的字符
+
         #html_stream.force_encoding("gbk")
         #html_stream.encode!("utf-8")
-        html_stream.encode!("utf-8",  :undef => :replace, :replace => "?", :invalid => :replace)
+#        html_stream.encode!("utf-8",  :undef => :replace, :replace => "?", :invalid => :replace)
       rescue StandardError,Timeout::Error, SystemCallError, Errno::ECONNREFUSED #有些异常不是标准异常  
        puts $!  
       end
